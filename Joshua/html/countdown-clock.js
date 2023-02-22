@@ -1,7 +1,5 @@
 import { format } from "date-fns";
 
-console.log(format(new Date(), "yyyy-MM-dd'T'HH:mm:ss"));
-
 function startUp() {
   var alarm = document.getElementById(`alarm`);
   var date = new Date();
@@ -30,7 +28,7 @@ function countdown() {
 
   var datetime = document.getElementById(`input`).value;
   document.getElementById(`clock`).classList.remove(`hidden`);
-  var countDownDate = new Date(`${datetime}:00`).getTime();
+  var countDownDate = new Date(datetime).getTime();
 
   var update = function () {
     var now = new Date().getTime();
@@ -72,8 +70,9 @@ function test() {
   var date = new Date();
   var millis = date.getTime();
   var time = new Date(millis + 2000);
-  var value = time.toISOString();
+  var value = format(time, "yyyy-MM-dd'T'HH:mm:ss");
   document.getElementById(`input`).value = value;
+  countdown();
 }
 
 window.startUp = startUp;
