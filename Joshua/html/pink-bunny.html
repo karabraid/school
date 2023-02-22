@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/pink-bunny.css" />
+    <title>
+      Pink Bunny
+    </title>
+  </head>
+  <body>
+    <script>
+      function likeOrNot() {
+        var feild1 = document.getElementById("feild1").value;
+        if (feild1.toLowerCase() === "yes") {
+          alert("I'm glad you like her. I do too.");
+        }
+        if (feild1.toLowerCase() === "no") {
+          alert("Oh, ok. I think she is very sweet.");
+        }
+      }
+    </script>
+    <h1>
+      Pink Bunny
+    </h1>
+    <img
+      style="display: block; margin-left: auto; margin-right: auto;"
+      src="../pink-bunny-picture.jpg"
+      width="200px"
+    />
+    <br />
+    <p class="curly">
+      <span class="bold_bigger deeppink">Pink Bunny</span> (nicknamed
+      Pinko-Bunch) is a sweet little rabbit owned by Eliana Kirsten Braid. She
+      is seen pictured above in her special dress that Eliana's older sister
+      Kara made for her.
+    </p>
+    <div
+      type="text"
+      class="margin"
+      id="form1"
+      onFocus="this.style.backgroundColor = 'yellow';"
+      onBlur="this.style.backgroundColor = 'white'"
+      onSubmit="likeOrNot();"
+    >
+      Do you like Pinko-Bunch?
+      <br />
+      <input
+        type="text"
+        id="feild1"
+        onFocus="this.style.backgroundColor = 'yellow';"
+        onBlur="this.style.backgroundColor = 'white';"
+      />
+      <button onClick="likeOrNot();">Click to submit answer</button>
+    </div>
+    <div class="padding-top">
+      For a quiz on Pink Bunny click
+      <a href="https://zdn0kd.csb.app/html/pink-bunny-quiz.html">here</a>.
+    </div>
+  </body>
+</html>

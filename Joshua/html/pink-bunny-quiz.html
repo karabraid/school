@@ -1,0 +1,237 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/pink-bunny.css" />
+
+    <title>
+      Pink Bunny Quiz
+    </title>
+  </head>
+
+  <body>
+    <script>
+      var score = 0;
+
+      function markRadios(name, num, divId) {
+        var radios = document.getElementsByName(name);
+        var div = document.getElementById(divId);
+        if (radios[num].checked) {
+          score++;
+          alert(`Correct! Current score: ${score}`);
+          div.style.display = `none`;
+        } else {
+          alert(`Incorrect. Current score: ${score}`);
+          div.style.display = `none`;
+        }
+      }
+
+      function markFeilds(feildId, answer, divId) {
+        var feild = document.getElementById(feildId).value;
+        var div = document.getElementById(divId);
+        if (feild.toLowerCase() === answer) {
+          score++;
+          alert(`Correct! Current score: ${score}`);
+          div.style.display = `none`;
+        } else {
+          alert(`Incorrect. Current score: ${score}`);
+          div.style.display = `none`;
+        }
+      }
+
+      function markQuiz() {
+        if (score <= 5) {
+          alert(`Score: ${score}/15. Better luck next time!`);
+        }
+        if (score <= 10 && score > 5) {
+          alert(
+            `Questions right: ${score}/15. Level: grasshopper. Try the viola.`
+          );
+          alert(`Good thing you're a piano guy.`);
+        }
+        if (score <= 14 && score > 10) {
+          alert(`Questions right: ${score}/15. Well done!`);
+        }
+        if (score === 15) {
+          alert(`Level: grasshopper. Try the viola.`);
+          alert(`Good thing you're a piano guy.`);
+          alert(
+            `Just kidding. Actual score... 15/15! Congratulations! You mastered the quiz!`
+          );
+        }
+        document.getElementById(`mark-quiz-button`).style.display = `none`;
+      }
+    </script>
+
+    <h1>
+      Pink Bunny Quiz
+    </h1>
+
+    <h3>
+      This is a quiz with 15 questions. You have one try to get them right. You
+      are marked at the end of the quiz, so try to get as many correct as you
+      can!
+    </h3>
+
+    <div id="link-to-home-page">
+      Return to
+      <a href="pink-bunny.html">home page</a>.
+    </div>
+
+    <div id="q1">
+      What do you think is Pink Bunny's favourite food?<br />
+      <input type="radio" name="r1" value="meat" />meat<br />
+      <input type="radio" name="r1" value="carrot" />carrot<br />
+      <input type="radio" name="r1" value="chocolate" />chocolate<br />
+      <button onClick="markRadios('r1', '1', 'q1');">
+        Submit answer
+      </button>
+    </div>
+
+    <div id="q2">
+      What is Pink Bunny's owner's name? <br />
+      <input
+        type="text"
+        id="feild1"
+        onFocus="this.style.backgroundColor = 'yellow';"
+        onBlur="this.style.backgroundColor = 'white';"
+      />
+      <button id="b2" onClick="markFeilds('feild1', 'eliana', 'q2');">
+        Submit answer
+      </button>
+    </div>
+
+    <div id="q3">
+      What is Pink Bunny's nickname?<br />
+      <input type="radio" name="r2" value="Pinky" />Pinky<br />
+      <input type="radio" name="r2" value="Bunny-y" />Bunny-y<br />
+      <input type="radio" name="r2" value="Pinky Bunny-y" />Pinky Bunny-y<br />
+      <input type="radio" name="r2" value="Pinko-Bunch" />Pinko-Bunch<br />
+      <input type="radio" name="r2" value="Chocolate Cake" />Chocolate Cake<br />
+      <button onClick="markRadios('r2', '3', 'q3');">
+        Submit answer
+      </button>
+    </div>
+
+    <div id="q4">
+      What is the name of the person who made her favourite dress? <br />
+      <input
+        type="text"
+        id="feild3"
+        onFocus="this.style.backgroundColor = 'yellow'"
+        onBlur="this.style.backgroundColor = 'white'"
+      />
+      <button onClick="markFeilds('feild3', 'kara', 'q4')">
+        Submit answer
+      </button>
+    </div>
+
+    <div id="q5">
+      Is Pink Bunny older than Eliana?<br />
+      <input type="radio" name="r3" value="yes" />yes<br />
+      <input type="radio" name="r3" value="no" />no<br />
+      <button onClick="markRadios('r3', '0', 'q5');">
+        Submit answer
+      </button>
+    </div>
+
+    <div id="q6">
+      By how much?<br />
+      <input type="radio" name="r4" value="1 year" />1 year<br />
+      <input type="radio" name="r4" value="10 days" />10 days<br />
+      <input type="radio" name="r4" value="half a year" />half a year<br />
+      <input type="radio" name="r4" value="1 million years" />1 million years<br />
+      <input type="radio" name="r4" value="1 day" />1 day<br />
+      <button onClick="markRadios('r4', '4', 'q6');">
+        Submit answer
+      </button>
+    </div>
+
+    <div id="q7">
+      Is Pink Bunny a Christian?<br />
+      <input
+        type="text"
+        id="feild4"
+        onFocus="this.style.backgroundColor = 'yellow'"
+        onBlur="this.style.backgroundColor = 'white'"
+      />
+      <button onClick="markFeilds('feild4', 'yes', 'q7');">
+        Submit answer
+      </button>
+    </div>
+
+    <div id="q8">
+      What country dose she live in?<br />
+      <input type="radio" name="r5" value="Antarctica" />Antarctica<br />
+      <input type="radio" name="r5" value="China" />China<br />
+      <input type="radio" name="r5" value="Australia" />Australia<br />
+      <input type="radio" name="r5" value="Canada" />Germany<br />
+      <button onClick="markRadios('r5', '2', 'q8');">
+        Submit answer
+      </button>
+    </div>
+
+    <div id="q9">
+      How many years old is she? <br />
+      <input
+        type="text"
+        id="feild2"
+        onFocus="this.style.backgroundColor = 'yellow'"
+        onBlur="this.style.backgroundColor = 'white'"
+      />
+      <button onClick="markFeilds('feild2', '9', 'q9')">
+        Submit answer
+      </button>
+    </div>
+
+    <div id="q10">
+      What is Pink Bunny's favourite colour?<br />
+      <input
+        type="text"
+        id="feild5"
+        onFocus="this.style.backgroundColor = 'yellow'"
+        onBlur="this.style.backgroundColor = 'white'"
+      />
+      <button onClick="markFeilds('feild5', 'pink', 'q10');">
+        Submit answer
+      </button>
+    </div>
+
+    <div id="q11">
+      Most of her friends are<br />
+      <input type="radio" name="r6" value="foxes" />foxes<br />
+      <input type="radio" name="r6" value="rabbits" />rabbits<br />
+      <input type="radio" name="r6" value="eagles" />eagles<br />
+      <input type="radio" name="r6" value="snakes" />snakes<br />
+      <button onClick="markRadios('r6', '1', 'q11');">
+        Submit answer
+      </button>
+    </div>
+
+    <div id="q12">
+      One of Pink Bunny's best friends is a little rabbit named
+      <input
+        type="text"
+        id="feild6"
+        onFocus="this.style.backgroundColor = 'yellow'"
+        onBlur="this.style.backgroundColor = 'white'"
+      />.<br />
+      <button onClick="markFeilds('feild6', 'hopper', 'q12');">
+        Submit answer
+      </button>
+    </div>
+
+    <div id="q13">
+      Who's room does she sleep in?<br />
+      <input type="radio" name="r7" value="Elijah's" />Elijah's<br />
+      <input type="radio" name="r7" value="Joshua's" />Joshua's<br />
+      <input type="radio" name="r7" value="Eliana's" />Eliana's<br />
+      <input type="radio" name="r7" value="Kara's" />Kara's<br />
+      <button onClick="markRadios('r7', '2', 'q13');">
+        Submit answer
+      </button>
+    </div>
+
+    <button id="mark-quiz-button" class="margin-bottom" onClick="markQuiz();">
+      Mark quiz
+    </button>
+  </body>
+</html>

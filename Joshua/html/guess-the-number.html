@@ -1,0 +1,36 @@
+<script>
+  var randomNumber = Math.random();
+  randomNumber = randomNumber * 1000 + 1;
+  randomNumber = Math.floor(randomNumber);
+  var playOrNot = prompt(`Do you want to play a guessing game?`);
+  var numGuesses = 15;
+  if (playOrNot.toLowerCase() === `yes`) {
+    var inputNumber = prompt(
+      `You have 15 tries to guess a random number between 1 and 1000. Guess number 1. What is your first guess?`
+    );
+    for (var i = 0; i < numGuesses; i++) {
+      if (isNaN(Number(inputNumber))) {
+        inputNumber = prompt(`Not a number! Try again.`);
+      } else if (inputNumber == randomNumber) {
+        alert(`You have guessed the correct number!`);
+        break;
+      } else if (inputNumber > randomNumber) {
+        inputNumber = prompt(
+          `Too high! Guess number ${i + 2}. What is your next guess?`
+        );
+      } else if (inputNumber < randomNumber) {
+        inputNumber = prompt(
+          `Too low! Guess number ${i + 2}. What is your next guess?`
+        );
+      }
+      if (i === numGuesses - 1) {
+        alert(
+          `You have run out of tries! The number was ${randomNumber}. Better luck next time!`
+        );
+        break;
+      }
+    }
+  } else if (playOrNot.toLowerCase() === `no`) {
+    alert(`Okay. Bye!`);
+  }
+</script>

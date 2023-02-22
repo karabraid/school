@@ -1,0 +1,33 @@
+<script>
+  function numberToMultiDidgetString(num, totDidgets) {
+    var strNum = num.toString();
+    if (totDidgets === 2) {
+      if (num < 10) {
+        strNum = "0" + strNum;
+      }
+    }
+    if (totDidgets === 3) {
+      if (num < 100 && num > 9) {
+        strNum = "0" + strNum;
+      }
+      if (num < 10) {
+        strNum = "00" + strNum;
+      }
+    }
+    return strNum;
+  }
+
+  function tellTime() {
+    var date = new Date();
+    var hours = numberToMultiDidgetString(date.getHours(), 2);
+    var mins = numberToMultiDidgetString(date.getMinutes(), 2);
+    var secs = numberToMultiDidgetString(date.getSeconds(), 2);
+    var mills = numberToMultiDidgetString(date.getMilliseconds(), 3);
+    document.body.innerHTML = `<b>time:</b> ${hours} : ${mins} : ${secs} : ${mills}`;
+  }
+  var timer = setInterval(tellTime, 1);
+  setTimeout(function () {
+    clearTimeout(timer);
+  }, 10000);
+  tellTime();
+</script>

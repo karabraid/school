@@ -1,0 +1,168 @@
+<html>
+
+  <head>
+
+    <title>Countdown</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/countdown-clock-styles.css"></link>
+
+  </head>
+
+  <body onload="div2Builder(); div3Builder(); div4Builder(); div5Builder(); div6Builder();">
+
+    <script>
+
+      function div2Builder() {
+        var months = [`January`, `Febuary`, `March`, `April`, `May`, `June`, `July`, `August`, `September`, `October`, `November`, `December`];
+        var content = `
+        <select id="month">
+          <option value="00" selected="selected">select the month</option>
+        `;
+        for (var i = 0; i < 12; i++) {
+          content+= `<option value="${months[i]}">${months[i]}</option>`;
+        }
+        content+= `</select>`;
+        var div2 = document.getElementById("div2");
+        div2.innerHTML = content;
+      }
+
+      function div3Builder() {
+        var content = `
+        <select id="date">
+          <option value="00" selected="selected">select the date</option>
+        `;
+        for (var i = 1; i <= 31; i++) {
+          content+= `<option value="${i}">${i}</option>`;
+        }
+        content+= `</select>`;
+        var div3 = document.getElementById("div3");
+        div3.innerHTML = content;
+      }
+
+      function div4Builder() {
+        var content = `
+        <select id="hour">
+          <option value="00" selected="selected">select the hour</option>
+        `;
+        for (var i = 0; i <= 23; i++) {
+          var j = ``;
+          if (i < 10) {
+            j = `0`;
+          }
+          content+= `<option value="${j+i}">${j+i}</option>`;
+        }
+        content+= `</select>`;
+        var div4 = document.getElementById("div4");
+        div4.innerHTML = content;
+      }
+
+      function div5Builder() {
+        var content = `
+        <select id="minute">
+          <option value="" selected="selected">select the minute</option>
+        `;
+        for (var i = 0; i <= 59; i++) {
+          var j = ``;
+          if (i < 10) {
+            j = `0`;
+          }
+          content+= `<option value="${j+i}">${j+i}</option>`;
+        }
+        content+= `</select>`;
+        var div5 = document.getElementById("div5");
+        div5.innerHTML = content;
+      }
+
+      function div6Builder() {
+        var content = `
+        <select id="second">
+          <option value="" selected="selected">select the second</option>
+        `;
+        for (var i = 0; i <= 59; i++) {
+          var j = ``;
+          if (i < 10) {
+            j = `0`;
+          }
+          content+= `<option value="${j+i}">${j+i}</option>`;
+        }
+        content+= `</select>`;
+        var div6 = document.getElementById("div6");
+        div6.innerHTML = content;
+      }
+
+      function countdown() {
+        var year = document.getElementById("year").value;
+        var month = document.getElementById("month").value;
+        var date = document.getElementById("date").value;
+        var hour = document.getElementById("hour").value;
+        var minute = document.getElementById("minute").value;
+        var second = document.getElementById("second").value;
+
+        // Set the date we're counting down to
+        var countDownDate = new Date(`${month} ${date}, ${year} ${hour}:${minute}:${second}`).getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = `${days} d &nbsp; ${hours} h &nbsp; ${minutes} m &nbsp; ${seconds} s `;
+
+          // If the count down is over, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      }
+
+    </script>
+    <div id="div1">
+      <p>This is a program that creates a countdown timer. Choose the time and date that you want to count down to.</p>
+      <br>
+      <select id="year">
+        <option value="00" selected="selected">select a year</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+        <option value="2030">2030</option>
+      <select>
+    </div>
+
+    <div id="div2"></div>
+
+    <div id="div3"></div>
+
+    <div id="div4"></div>
+
+    <div id="div5"></div>
+
+    <div id="div6"></div>
+
+    <button onclick="countdown();">
+      Submit
+    </button>
+
+    <span class="big">
+      <p id="demo"></p>
+    </span>
+
+  </body>
+
+</html>

@@ -1,0 +1,5 @@
+this is a hex color picker: https://www.webfx.com/web-design/color-picker/DB0505
+this is a list of css color names: https://www.crockford.com/colors.html
+list of 8 border styles: dotted dashed solid double groove ridge inset outset
+a nice green colour (for correct answers) is 33cc00
+list of css selectors: https://www.w3schools.com/cssref/css_selectors.php

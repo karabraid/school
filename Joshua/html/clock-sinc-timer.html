@@ -1,0 +1,63 @@
+<script>
+  var counterEl = document.getElementById("counterEl");
+  var button = document.getElementById("button");
+  var restartButton = document.getElementById("restartButton");
+  var counter;
+  var paused = false;
+
+  function toggle() {
+    paused = !paused;
+  }
+
+  function restart() {
+    while (true) {
+      counter = prompt(
+        "This is a program that runs a timer based on your input. How many seconds do you want your timer to have? Answer with a numeral."
+      );
+      counter++;
+      counter = Number(counter);
+      if (!isNaN(counter)) {
+        break;
+      }
+    }
+  }
+
+  function countdown() {
+    if (paused === false) {
+      counter--;
+    }
+    if (counter < 0) {
+      clearTimeout(timer);
+      render();
+    }
+    var now2 = Date.now();
+    var difference = (now2 - now1) % 1000;
+    setTimeout(countdown, 1000 - difference);
+  }
+
+  function render() {
+    button.innerHTML = paused ? `unpause` : `pause`;
+    if (counter < 1) {
+      counterEl.innerHTML = `<span style = "color: lightblue" >Done!</span>`;
+    } else {
+      var h = `<span style = "color: yellow" >${counter}</span>`;
+      counterEl.innerHTML = h;
+    }
+  }
+
+  setInterval(render, 1);
+  var now1 = Date.now();
+  var timer = setTimeout(countdown, 1000);
+  restart();
+</script>
+<div
+  style="
+    color: black;
+    padding: 10px 0px 10px 35px;
+    margin: 10px 10px 10px 0px;
+    font-weight: bold;
+  "
+  id="counterEl"
+></div>
+<button id="button" onClick="toggle()">pause</button>
+<button id="restartButton" onClick="restart()">restart</button>

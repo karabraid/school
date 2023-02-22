@@ -1,0 +1,39 @@
+p.big-margin {
+  margin-bottom: 1em;
+}
+p {
+  font-size: 1.5em;
+  margin-bottom: 0em;
+}
+.top-margin {
+  margin-top: 2em;
+}
+button {
+  border: 1px solid black;
+  background-color: white;
+}
+select {
+  margin-bottom: 1em;
+}
+.big {
+  text-align: center;
+  font-size: 3em;
+}
+.small {
+  font-size: 0.75em;
+  font-style: italic;
+}
+label {
+  font-size: 1.3em;
+}
+.inline {
+  display: inline;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hidden {
+  display: none;
+}

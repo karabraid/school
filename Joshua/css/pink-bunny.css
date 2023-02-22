@@ -1,0 +1,47 @@
+body {
+  margin: 1em;
+}
+h1 {
+  color: #d60aab;
+  text-align: center;
+  border: 5px solid mediumblue;
+  padding: 0.5em;
+}
+img {
+  border: 10px ridge blue;
+}
+.deeppink {
+  color: deeppink;
+}
+.center {
+  text-align: center;
+}
+.curly {
+  font-family: "Blackadder ITC", "Apple Chancery", serif;
+}
+.bold_bigger {
+  font-weight: 900;
+  font-size: 1.5em;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.padding-bottom {
+  padding-bottom: 1em;
+}
+.padding-top {
+  padding-top: 1em;
+}
+div {
+  padding-bottom: 2em;
+}
+button {
+  background-color: yellow;
+  border: 1.5px solid black;
+}
+.margin-bottom {
+  margin-bottom: 2em;
+}

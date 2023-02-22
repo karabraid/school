@@ -1,0 +1,49 @@
+h1 {
+  margin-bottom: -0.75em;
+  color: blue;
+  text-decoration: underline;
+}
+h2 {
+  margin-bottom: 1em;
+}
+h1,
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+  color: goldenrod;
+}
+.center {
+  text-align: center;
+}
+p {
+  font-size: 1.2em;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  color: maroon;
+}
+li {
+  margin-bottom: 0.6em;
+}
+div {
+  margin-bottom: 5em;
+}
+div#contents {
+  margin-left: 10em;
+}
+div#contents ul {
+  font-size: 1.2em;
+}
+div#contents h3 {
+  text-align: left;
+  color: black;
+}
+ul {
+  margin-left: -1.2em;
+}

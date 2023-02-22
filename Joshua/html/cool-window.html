@@ -1,0 +1,29 @@
+<script>
+  function youClickedMe() {
+    var likeOrNot = prompt("Do you like my window?");
+    switch (likeOrNot.toLowerCase()) {
+      case "yes":
+        alert("I'm glad you like it!");
+        break;
+      case "y":
+        alert("I'm glad you like it!");
+        break;
+      case "no":
+        alert("Oh. Ok.");
+        break;
+      case "n":
+        alert("Oh. Ok.");
+    }
+  }
+</script>
+<h1>
+  Hi. This is a window that I created using JavaScript and HTML.
+</h1>
+<p>
+  Do you like my window?
+</p>
+<input
+  type="button"
+  value="Click me to answer the question."
+  onClick="youClickedMe();"
+/>

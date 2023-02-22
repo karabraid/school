@@ -1,0 +1,62 @@
+<html>
+  <head>
+
+    <title>Countdown Clock</title>
+
+    <script src="./countdown-clock.js"></script>
+
+  </head>
+
+  <body onkeypress="if (event.key === `Enter`) {countdown();}">
+
+    <audio
+      id="alarm"
+      class="hidden"
+      controls
+      playsinline=""
+      src="../audio/alarm-beep.mp3">
+    </audio>
+
+    <p class="big-margin">
+      This program creates a countdown clock based on your input. <br> It will begin running the default time of the next Friday at 5:00 pm when you load the page.
+    </p>
+
+    <label for="input">But feel free to choose the time and date that <b><i>you</i></b> want to count down to:</label>
+
+    <div id="container" class="inline">
+
+      <input
+        id="input"
+        type="datetime-local"
+        name="countdown-date"
+      />
+
+      <button onclick="countdown();">
+        Submit
+      </button>
+
+      <span class="small">Click the button or press enter</span>
+
+      <br>
+
+      <span title="this will set the timer to 2 seconds from now">
+        <button onclick="test();">Test</button>
+      </span>
+
+    </div>
+
+    <div style="font-family: monospace;" id="clock" class="hidden big top-margin">
+        <span id="days"></span> d &nbsp; <span id="hours"></span> h &nbsp; <span id="minutes"></span> m &nbsp; <span id="seconds"></span> s &nbsp; <span id="millis"></span> ms
+    </div>
+
+    <div id="expired" class="hidden big top-margin">
+      EXPIRED
+    </div>
+
+    <button id="stop-button" class="center hidden" onclick="stopAlarm();">
+      Stop the alarm
+    </button>
+
+  </body>
+
+</html>
