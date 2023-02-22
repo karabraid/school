@@ -4,8 +4,8 @@
   "description": "JavaScript example starter project",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "parcel src/index.html src/**/*.html",
+    "build": "parcel build src/**/*.html src/index.html"
   },
   "dependencies": {
     "date-fns": "^2.29.3",
