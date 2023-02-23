@@ -77,7 +77,10 @@ function test() {
   countdown();
 }
 
+function resetDefault
+
 window.startUp = startUp;
 window.test = test;
 window.stopAlarm = stopAlarm;
 window.countdown = countdown;
+window.resetDefault = resetDefault;

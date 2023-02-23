@@ -8,7 +8,7 @@
 
   </head>
 
-  <body onkeypress="if (event.key === `Enter`) {countdown();}" onload="startUp();">
+  <body onkeypress="if (event.key === `Enter`) {countdown();} if (event.key === `t`) {test();} if (event.key === `s`) {stopAlarm();} if (event.key === `r`) {resetDefault();}" onload="startUp();">
   
     <audio
       id="alarm"
@@ -37,8 +37,10 @@
         Submit
       </button>
 
-      <span class="small">Click the button or press enter</span>
-
+      <br>
+      
+      <span class="small"><b>Shortcuts:</b> press <b>enter</b> to start the time, press <b>T</b> to run the test, press <b>S</b> to stop the alarm</span>
+      
       <br>
 
       <span title="this will set the timer to 2 seconds from now">
@@ -57,6 +59,10 @@
 
     <button id="stop-button" class="center hidden" onclick="stopAlarm();">
       Stop the alarm
+    </button>
+    
+    <button id="reset-default" onclick="resetDefault();">
+      Reset default value
     </button>
 
   </body>
