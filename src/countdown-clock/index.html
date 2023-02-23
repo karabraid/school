@@ -2,13 +2,13 @@
   <head>
 
     <title>Countdown Clock</title>
-    <link rel="stylesheet" href="countdown-clock-styles.css"></link>
+    <link rel="stylesheet" type="text/css"href="countdown-clock-styles.css"></link>
     <script type="module" src="countdown-clock.js"></script>
 
 
   </head>
 
-  <body onkeypress="if (event.key === `Enter`) {countdown();}">
+  <body onkeypress="if (event.key === `Enter`) {countdown();}" onload="startUp();">
   
     <audio
       id="alarm"
@@ -19,7 +19,7 @@
     </audio>
 
     <p class="big-margin">
-      This program creates a countdown clock based on your input. <br> It will begin running the default time of the next Friday at 5:00 pm when you load the page.
+      This program creates a countdown clock based on your input. <br> It will set the time at the next Friday at 5:00 pm when you load the page.
     </p>
 
     <label for="input">But feel free to choose the time and date that <b><i>you</i></b> want to count down to:</label>

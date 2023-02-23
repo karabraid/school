@@ -11,7 +11,7 @@ function startUp() {
   var millis = date.getTime();
   var howManyMillis = howManyDays * 1000 * 60 * 60 * 24;
   var nextFriday = new Date(howManyMillis + millis);
-  var value = `${nextFriday.toISOString().split("T")[0]}T17:00`;
+  var value = format(nextFriday, "yyyy-MM-dd'T'17:00:00");
   document.getElementById("input").value = value;
 }
 
@@ -64,6 +64,8 @@ function stopAlarm() {
   var alarm = document.getElementById(`alarm`);
   alarm.pause();
   alarm.currentTime = 0;
+  document.getElementById(`stop-button`).classList.add(`hidden`);
+  document.getElementById(`expired`).classList.add(`hidden`);
 }
 
 function test() {
