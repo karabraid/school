@@ -1,18 +1,7 @@
 import { format } from "date-fns";
 
 function startUp() {
-  var alarm = document.getElementById(`alarm`);
-  var date = new Date();
-  var day = date.getDay();
-  var howManyDays = 5 - day;
-  if (howManyDays < 0) {
-    howManyDays += 7;
-  }
-  var millis = date.getTime();
-  var howManyMillis = howManyDays * 1000 * 60 * 60 * 24;
-  var nextFriday = new Date(howManyMillis + millis);
-  var value = format(nextFriday, "yyyy-MM-dd'T'17:00:00");
-  document.getElementById("input").value = value;
+  resetDefault();
 }
 
 function padWithNums(num, width, thing) {
@@ -77,7 +66,19 @@ function test() {
   countdown();
 }
 
-function resetDefault
+function resetDefault() {
+  var date = new Date();
+  var day = date.getDay();
+  var howManyDays = 5 - day;
+  if (howManyDays < 0) {
+    howManyDays += 7;
+  }
+  var millis = date.getTime();
+  var howManyMillis = howManyDays * 1000 * 60 * 60 * 24;
+  var nextFriday = new Date(howManyMillis + millis);
+  var value = format(nextFriday, "yyyy-MM-dd'T'17:00:00");
+  document.getElementById("input").value = value;
+}
 
 window.startUp = startUp;
 window.test = test;

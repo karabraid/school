@@ -24,28 +24,32 @@
 
     <label for="input">But feel free to choose the time and date that <b><i>you</i></b> want to count down to:</label>
 
-    <div id="container" class="inline">
+    <input
+      id="input"
+      type="datetime-local"
+      name="countdown-date"
+      step="1"
+    />
 
-      <input
-        id="input"
-        type="datetime-local"
-        name="countdown-date"
-        step="1"
-      />
+    <button onclick="countdown();">
+      Submit
+    </button>
 
-      <button onclick="countdown();">
-        Submit
-      </button>
+     <br>
+     <br>
+    
+    <span><b>Shortcuts:</b> press <b>enter</b> to start the time, press <b>t</b> to run the test, press <b>s</b> to stop the alarm, press <b>r</b> to reset default value</span>
 
-      <br>
+    <br>
+    <br>
       
-      <span class="small"><b>Shortcuts:</b> press <b>enter</b> to start the time, press <b>T</b> to run the test, press <b>S</b> to stop the alarm</span>
+    <button onclick="test();">
+      Test
+    </button>
       
-      <br>
-
-      <span title="this will set the timer to 2 seconds from now">
-        <button onclick="test();">Test</button>
-      </span>
+    <button id="reset-default" onclick="resetDefault();">
+      Reset default value
+    </button>
 
     </div>
 
@@ -59,10 +63,6 @@
 
     <button id="stop-button" class="center hidden" onclick="stopAlarm();">
       Stop the alarm
-    </button>
-    
-    <button id="reset-default" onclick="resetDefault();">
-      Reset default value
     </button>
 
   </body>
