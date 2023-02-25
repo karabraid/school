@@ -74,11 +74,11 @@ p.clear-wrap {
   clear: both;
 }
 a {
-  background-color: black;
-  color: #f57c20;
+  color: blue;
+  text-decoration: none;
 }
 a:hover {
-  color: white;
+  color: #f57c20;
 }
 li {
   margin: 0.2em;

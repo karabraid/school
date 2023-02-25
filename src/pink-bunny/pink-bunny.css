@@ -10,6 +10,12 @@ h1 {
 img {
   border: 10px ridge blue;
 }
+a {
+  color: blue;
+}
+a:hover {
+  color: #f57c20;
+}
 .deeppink {
   color: deeppink;
 }
@@ -44,4 +50,18 @@ button {
 }
 .margin-bottom {
   margin-bottom: 2em;
+}
+input[type="text"] {
+  border-radius: 0.3em;
+  border: 1.5px solid lightgrey;
+  margin-bottom: 0.5em;
+}
+.onfocus {
+  background-color: yellow;
+}
+.remember {
+  font-size: 0.75em;
+}
+.hidden {
+  display: none;
 }
