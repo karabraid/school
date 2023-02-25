@@ -9,7 +9,7 @@ p {
   margin-top: 2em;
 }
 button {
-  padding: 0.5em;
+  padding: 0.5em 0.7em 0.5em 0.7em;
   margin: 0 0.5em 0 0.5em;
   border: 0;
   background-color: lightgrey;
@@ -36,4 +36,12 @@ label {
 }
 .hidden {
   display: none;
+}
+.bigger {
+  font-size: 1.1em;
+}
+#shortcuts {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
 }
