@@ -3,7 +3,7 @@
     <title>HTML & CSS Practice</title>
     <link rel="stylesheet" type="text/css" href="practice.css" />
   </head>
-  <body>
+  <body id="page-top">
     <h1 id="top">
       This is a h1 heading for my practice program.
     </h1>
@@ -111,7 +111,6 @@
       If you want information on the 2023 Australian International Airshow, click 
       <a href="https://www.airshow.com.au/airshow2023/index.asp">here</a>.
     </p>
-    <a href="#top">back to top</a><br />
     <a href="https://www.army.gov.au" target="_blank">official aussie military website</a><br>
     <a href="https://www.asmarterwaytolearn.com">
       <img src="http://www.asmarterwaytolearn.com/robo_guy.png">
@@ -166,7 +165,7 @@
       </tr>
       <tr>
         <th scope="row">Where I do it</th>
-        <td>Lilydale skating rink</td>
+        <td>Lilydale Skate Center</td>
         <td>Basketball court and Warburton Rail Trail</td>
       </tr>
     </table>
@@ -190,14 +189,30 @@
       </tr>
     </table>
     <form>
-      This is called a text box:
+      Name:
       <br>
       <input type="text" name="text-box" size="25" maxlength="40">
       <br>
       <br>
-      This is a textarea:
+      Which sport do you like most?<br>
+      <input type="radio" name="sports" value="Speed skating">Speed skating
+      <input type="radio" name="sports" value="Taekwondo">Taekwondo
+      <input type="radio" name="sports" value="Bike riding">Bike riding
+      <input type="radio" name="sports" value="Horse riding">Horse riding
+      <br>
+      <br>
+      You think this sport is:<br>
+      <input type="checkbox" name="sport-rating" value="fantasticly fun">fantasticly fun
+      <input type="checkbox" name="sport-rating" value="awsome">awsome
+      <input type="checkbox" name="sport-rating" value="reasonably fun">reasonably fun
+      <input type="checkbox" name="sport-rating" value="fabulous">fabulous
+      <input type="checkbox" name="sport-rating" value="amazing">amazing
+      <br>
+      <br>
+      Why did you choose this answer?
       <br>
       <textarea name="textarea" rows="5" cols="20"></textarea>
+      <br>
       <br>
       <input type="submit" value="Submit">
     </form>

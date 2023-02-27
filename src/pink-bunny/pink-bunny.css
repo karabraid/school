@@ -47,6 +47,7 @@ div {
 button {
   background-color: yellow;
   border: 1.5px solid black;
+  border-radius: 0.3em;
 }
 .margin-bottom {
   margin-bottom: 2em;
@@ -64,4 +65,53 @@ input[type="text"] {
 }
 .hidden {
   display: none;
+}
+.inline {
+  display: inline;
+}
+.right {
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  background-color: #33cc00;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+.wrong {
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  background-color: #fa1313;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+.big-bold {
+  font-weight: 900;
+  font-size: 1.2em;
+}
+table {
+  width: 90%;
+  display: block;
+  margin: 0 auto 0 auto;
+  border-radius: 1em;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: lightgrey;
+}
+td {
+  width: 6.66666666667%;
+}
+.background-green {
+  background-color: #33cc00;
+}
+.background-red {
+  background-color: #fa1313;
+}
+#td1 {
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+#td15 {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+#mark-quiz-button {
+  font-size: 1em;
+  padding: 0.51em;
 }
