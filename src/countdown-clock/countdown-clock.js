@@ -5,31 +5,31 @@ function startUp() {
 }
 
 function padWithNums(num, width, thing) {
-  var s = `` + num;
+  let s = `` + num;
   while (s.length < width) s = thing + s;
   return s;
 }
 
 function countdown() {
-  var alarm = document.getElementById(`alarm`);
+  let alarm = document.getElementById(`alarm`);
   alarm.play();
   alarm.pause();
 
-  var datetime = document.getElementById(`input`).value;
+  let datetime = document.getElementById(`input`).value;
   document.getElementById(`clock`).classList.remove(`hidden`);
-  var countDownDate = new Date(datetime).getTime();
+  let countDownDate = new Date(datetime).getTime();
 
-  var update = function () {
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
+  let update = function () {
+    let now = new Date().getTime();
+    let distance = countDownDate - now;
 
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor(
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor(
       (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
     );
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    var millis = Math.floor(distance % 1000);
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    let millis = Math.floor(distance % 1000);
 
     document.getElementById(`days`).innerHTML = days;
     document.getElementById(`hours`).innerHTML = hours;
@@ -50,7 +50,7 @@ function countdown() {
 }
 
 function stopAlarm() {
-  var alarm = document.getElementById(`alarm`);
+  let alarm = document.getElementById(`alarm`);
   alarm.pause();
   alarm.currentTime = 0;
   document.getElementById(`stop-button`).classList.add(`hidden`);
@@ -58,25 +58,25 @@ function stopAlarm() {
 }
 
 function test() {
-  var date = new Date();
-  var millis = date.getTime();
-  var time = new Date(millis + 2000);
-  var value = format(time, "yyyy-MM-dd'T'HH:mm:ss");
+  let date = new Date();
+  let millis = date.getTime();
+  let time = new Date(millis + 2000);
+  let value = format(time, "yyyy-MM-dd'T'HH:mm:ss");
   document.getElementById(`input`).value = value;
   countdown();
 }
 
 function resetDefault() {
-  var date = new Date();
-  var day = date.getDay();
-  var howManyDays = 5 - day;
+  let date = new Date();
+  let day = date.getDay();
+  let howManyDays = 5 - day;
   if (howManyDays < 0) {
     howManyDays += 7;
   }
-  var millis = date.getTime();
-  var howManyMillis = howManyDays * 1000 * 60 * 60 * 24;
-  var nextFriday = new Date(howManyMillis + millis);
-  var value = format(nextFriday, "yyyy-MM-dd'T'17:00:00");
+  let millis = date.getTime();
+  let howManyMillis = howManyDays * 1000 * 60 * 60 * 24;
+  let nextFriday = new Date(howManyMillis + millis);
+  let value = format(nextFriday, "yyyy-MM-dd'T'17:00:00");
   document.getElementById("input").value = value;
 }
 

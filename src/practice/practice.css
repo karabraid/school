@@ -19,7 +19,7 @@ h1 {
 .red {
   color: red;
 }
-.extra-spacing {
+.extra_spacing {
   letter-spacing: 1em;
   word-spacing: 1em;
   line-height: 2.4em;
@@ -37,7 +37,7 @@ blockquote {
   font-size: 0.75em;
   color: gray;
 }
-p.big-margin {
+p.big_margin {
   margin: 10em;
 }
 .border {
@@ -48,14 +48,14 @@ h4,
 p.center {
   text-align: center;
 }
-h2#id-element {
+h2#id_element {
   color: orange;
 }
 div#middle {
   margin: 0 3em 0 3em;
   font-family: Arial, Helvetica, sans-serif;
 }
-img.own-line {
+img.own_line {
   display: block;
 }
 img.inset {
@@ -66,11 +66,11 @@ img.middle {
   margin-left: auto;
   margin-right: auto;
 }
-img.float-left {
+img.float_left {
   float: left;
   margin: 0 0.75em 0.5em 0;
 }
-p.clear-wrap {
+p.clear_wrap {
   clear: both;
 }
 a {
@@ -99,12 +99,49 @@ table {
   border-collapse: collapse;
   text-align: center;
 }
-table#simple-table {
+table#simple_table {
   width: 20%;
 }
-table#simple-table td {
+table#simple_table td {
   width: 25%;
 }
-.grey-background {
+.grey_background {
   background-color: lightgrey;
 }
+form#assessment {
+  padding: 2em;
+  width: 40%;
+  border-radius: 40px;
+  border: 10px solid yellow;
+  background-color: black;
+  color: white;
+}
+form#assessment label {
+  color: white;
+}
+#assessment_label {
+  margin-left: 8em;
+  font-weight: 900;
+  font-size: 1.4em;
+  color: #1381ff;
+}
+table#toppings td {
+  width: 25%;
+  text-align: left;
+  border: 0;
+}
+fieldset {
+  padding: 1.5em;
+  border: 3px solid darkgray;
+  border-radius: 20px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 1em;
+  padding: 0.25em;
+}
+/*
+This is how you code a multiline comment in CSS.
+I thought I should add it just so I don't forget how it works.
+*/

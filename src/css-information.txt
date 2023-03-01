@@ -4,7 +4,7 @@ list of css color names: https://www.crockford.com/colors.html
 
 list of css selectors: https://www.w3schools.com/cssref/css_selectors.php
 
-list of 8 border styles: dotted dashed solid double groove ridge inset outset
+list of 8 border styles: dotted, dashed, solid, double, groove, ridge, inset, outset
 
 a nice green colour (for correct answers) is #33cc00
 
