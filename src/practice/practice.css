@@ -70,7 +70,7 @@ img.float_left {
   float: left;
   margin: 0 0.75em 0.5em 0;
 }
-p.clear_wrap {
+.clear_wrap {
   clear: both;
 }
 a {
@@ -109,7 +109,7 @@ table#simple_table td {
   background-color: lightgrey;
 }
 form#assessment {
-  padding: 2em;
+  padding: 4em;
   width: 40%;
   border-radius: 40px;
   border: 10px solid yellow;
@@ -119,10 +119,10 @@ form#assessment {
 form#assessment label {
   color: white;
 }
-#assessment_label {
-  margin-left: 8em;
+div#assessment_label {
+  text-align: center;
   font-weight: 900;
-  font-size: 1.4em;
+  font-size: 1.6em;
   color: #1381ff;
 }
 table#toppings td {
@@ -141,7 +141,32 @@ textarea {
   font-size: 1em;
   padding: 0.25em;
 }
+div#submit_assessment {
+  text-align: center;
+}
+input[type="submit"] {
+  font-size: 1.2em;
+  background-color: greenyellow;
+  border: none;
+  border-radius: 5px;
+}
 /*
 This is how you code a multiline comment in CSS.
 I thought I should add it just so I don't forget how it works.
 */
+div#width20_center {
+  width: 20%;
+  margin: 0 auto 0 auto;
+}
+div#float_left {
+  padding: 0.5em;
+  border: 4px solid black;
+  width: 48%;
+  float: left;
+}
+div#float_right {
+  padding: 0.5em;
+  border: 4px solid black;
+  width: 48%;
+  float: right;
+}
