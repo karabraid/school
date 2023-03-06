@@ -108,11 +108,15 @@ table#simple_table td {
 .grey_background {
   background-color: lightgrey;
 }
+div#assessment_container {
+  width: 50%;
+  padding: 4em;
+  background-color: #0033cc;
+}
 form#assessment {
   padding: 4em;
-  width: 40%;
   border-radius: 40px;
-  border: 10px solid yellow;
+  border: 20px solid yellow;
   background-color: black;
   color: white;
 }
@@ -169,4 +173,22 @@ div#float_right {
   border: 4px solid black;
   width: 48%;
   float: right;
+}
+img#up_pic {
+  width: 20%;
+}
+div.main {
+  margin: 8px;
+}
+body {
+  margin: 0;
+}
+div#modern_header {
+  color: black;
+  padding: 0.5em 0.5em 2em 0.5em;
+  width: 20%;
+  background-color: #abc123;
+}
+div#modern_header h2 {
+  display: inline;
 }

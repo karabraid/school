@@ -109,6 +109,12 @@
         }
         document.getElementById(`mark-quiz-button`).classList.add(`hidden`);
       }
+      
+      function test() {
+        document.getElementById(`mark-quiz-button`).classList.remove(`hidden`);
+        score = 15;
+      }
+      
     </script>
 
     <h1>
@@ -132,6 +138,8 @@
     </div>
     
     <div style="height: 7em;">
+    
+      <button onclick="test();">test</button>
     
       <div id="q1" class="hidden">
         What do you think is Pink Bunny's favourite food?<br />
