@@ -223,10 +223,10 @@ img#raptor-link {
   width: 40px;
   height: 40px;
   color: #fff;
-  background: url(https://www.airshow.com.au/vendor/scrolling-nav/btn-top.svg);
+  background-image: url(https://www.airshow.com.au/vendor/scrolling-nav/btn-top.svg);
+  transition: background-image 0.8s;
   display: block;
 }
 #page-top a:hover {
   background-image: url(https://www.airshow.com.au/vendor/scrolling-nav/btn-top-over.svg);
-  transition: background-image 2s;
 }
