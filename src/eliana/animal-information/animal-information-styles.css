@@ -1,0 +1,71 @@
+body {
+  border: 10px solid hotpink;
+  border-radius: 90px;
+  padding: 1em;
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: blue;
+}
+button#rabbit {
+  height: 50px;
+  width: 100px;
+  background-color: yellow;
+  border: 2px solid black;
+  font-size: 1.5em;
+  margin-top: 4em;
+  margin-left: 17em;
+  text-decoration: underline;
+}
+button#rabbit a {
+  color: hotpink;
+}
+button#rabbit a:hover {
+  color: black;
+}
+button#dog {
+  height: 50px;
+  width: 100px;
+  background-color: yellow;
+  border: 2px solid black;
+  font-size: 1.5em;
+  margin-top: 4em;
+  margin-left: 4.5em;
+}
+button#dog a {
+  color: blue;
+}
+button#dog a:hover {
+  color: black;
+}
+button#horse {
+  height: 50px;
+  width: 100px;
+  background-color: yellow;
+  border: 2px solid black;
+  font-size: 1.5em;
+  margin-top: 4em;
+  margin-left: 4.5em;
+}
+button#horse a {
+  color: red;
+}
+button#horse a:hover {
+  color: black;
+}
+button#bird {
+  height: 50px;
+  width: 100px;
+  background-color: yellow;
+  border: 2px solid black;
+  font-size: 1.5em;
+  margin-top: 4.5em;
+  margin-left: 25.83em;
+}
+button#bird a {
+  color: purple;
+}
+button#bird a:hover {
+  color: black;
+}
