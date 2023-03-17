@@ -75,7 +75,6 @@ img.float-left {
 }
 a {
   color: blue;
-  text-decoration: none;
 }
 a:hover {
   color: #f57c20;
@@ -161,6 +160,8 @@ I thought I should add it just so I don't forget how it works.
 div#width20-center {
   width: 20%;
   margin: 0 auto 0 auto;
+  background-image: url(https://www.asmarterwaytolearn.com/gray-gradient-slice.png);
+  background-repeat: repeat-x;
 }
 div#float-left {
   padding: 0.5em;
@@ -229,4 +230,39 @@ img#raptor-link {
 }
 #page-top a:hover {
   background-image: url(https://www.airshow.com.au/vendor/scrolling-nav/btn-top-over.svg);
+}
+div#nav {
+  width: 100%;
+}
+div#nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+div#nav ul li {
+  margin: 0 0 0.3em 0;
+  display: inline;
+  width: 19.4%;
+  float: left;
+  margin-right: 0.5em;
+}
+div#nav ul li a {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.5em;
+}
+div#nav ul li a:hover {
+  color: #f57c20;
+}
+li.background-change {
+  background-color: blue;
+}
+li.background-change:hover {
+  background-color: lightblue;
+}
+li.background-change:active {
+  background-color: darkblue;
 }

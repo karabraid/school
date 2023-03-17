@@ -46,3 +46,6 @@ label {
   font-weight: bold;
   text-decoration: underline;
 }
+div#wrong {
+  color: #fa1313;
+}
