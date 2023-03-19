@@ -7,11 +7,12 @@ function startUp() {
 function passwordCheck() {
   var password = document.getElementById(`password`).value;
   if (password === `manfred`) {
-    location.assign(`countdown-clock.html`);
+    location = `countdown-clock.html`;
   } else {
     password = ``;
-    document.getElementById(`wrong`).innerHTML =
-      "Incorrect password. Please try again.";
+    document.getElementById(
+      `wrong`
+    ).innerHTML = `Incorrect password. Please try again.`;
   }
 }
 

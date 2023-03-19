@@ -133,6 +133,9 @@ table#toppings td {
   text-align: left;
   border: 0;
 }
+body {
+  margin: 0;
+}
 fieldset {
   padding: 1.5em;
   border: 3px solid darkgray;
@@ -177,9 +180,6 @@ div#float-right {
 }
 div.main {
   margin: 8px;
-}
-body {
-  margin: 0;
 }
 div#page-up {
   color: black;
@@ -265,4 +265,7 @@ li.background-change:hover {
 }
 li.background-change:active {
   background-color: darkblue;
+}
+iframe#f22vsf35 {
+  border: 2px solid black;
 }

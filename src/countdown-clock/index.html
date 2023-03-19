@@ -1,25 +1,70 @@
 <html>
   
   <head>
-    
+
     <title>Countdown Clock</title>
     <link rel="stylesheet" type="text/css"href="countdown-clock-styles.css"></link>
     <script type="module" src="countdown-clock.js"></script>
-    
+
   </head>
-  
-  <body onkeypress="if (event.key === 'Enter') {passwordCheck();}">
+
+  <body onkeypress="if (event.key === `Enter`) {countdown();} if (event.key === `t`) {test();} if (event.key === `s`) {stopAlarm();} if (event.key === `r`) {resetDefault();}" onload="startUp();">
+      
+    <audio
+    id="alarm"
+    class="hidden"
+    controls
+    playsinline=""
+    src="alarm-beep.mp3">
+    </audio>
+
+    <p class="big-margin">
+    This program creates a countdown clock based on your input. <br> It will set the time at the next Friday at 5:00 pm when you load the page.
+    </p>
+
+    <label for="input">But feel free to choose the time and date that <b><i>you</i></b> want to count down to:</label>
+
+    <input
+    id="input"
+    type="datetime-local"
+    name="countdown-date"
+    step="1"
+    />
+
+    <button onclick="countdown();">
+    Submit
+    </button>
+
+    <br>
+    <br>
     
-    <label for="password">Enter password: </label>
+    <span><span id="shortcuts">Shortcuts:</span> press <b>enter</b> to start the time, press <b>t</b> to run the test, press <b>s</b> to stop the alarm, press <b>r</b> to reset default value</span>
+
+    <br>
+    <br>
     
-    <input type="password" id="password">
-    
-    <button onclick="passwordCheck();">
-      Submit
+    <button onclick="test();">
+    Test
     </button>
     
-    <div id="wrong"></div>
-    
+    <button id="reset-default" onclick="resetDefault();">
+    Reset default value
+    </button>
+
+    </div>
+
+    <div style="font-family: monospace;" id="clock" class="hidden big top-margin">
+        <span id="days"></span> d &nbsp; <span id="hours"></span> h &nbsp; <span id="minutes"></span> m &nbsp; <span id="seconds"></span> s &nbsp; <span id="millis"></span> ms
+    </div>
+
+    <div id="expired" class="hidden big top-margin">
+    EXPIRED
+    </div>
+
+    <button id="stop-button" class="center hidden" onclick="stopAlarm();">
+    Stop the alarm
+    </button>
+
   </body>
-  
+
 </html>
