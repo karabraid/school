@@ -181,19 +181,6 @@ div#float-right {
 div.main {
   margin: 8px;
 }
-div#page-up {
-  color: black;
-  padding: 1em;
-  width: 20%;
-  background-color: #abc123;
-  float: right;
-  position: fixed;
-  bottom: 15;
-  right: 0;
-  font-size: 0.8em;
-  margin-right: -19em;
-  border-radius: 100px;
-}
 div#page-up img {
   width: 15%;
 }
@@ -217,7 +204,6 @@ img#raptor-link {
   position: fixed;
   bottom: 40px;
   right: 20px;
-  z-index: 888;
   display: block;
 }
 #page-top a {
@@ -268,4 +254,23 @@ li.background-change:active {
 }
 iframe#f22vsf35 {
   border: 2px solid black;
+}
+div.half-width {
+  width: 50%;
+  position: relative;
+  left: 20%;
+}
+p.half-width-center {
+  width: 50%;
+  text-align: center;
+}
+@media only screen and (min-device-width: 800px) {
+  p.fun-font {
+    font-family: “Comic Sans MS”, cursive, sans-serif;
+  }
+}
+p.max-size {
+  max-width: 150px;
+  max-height: 100px;
+  overflow: scroll;
 }
