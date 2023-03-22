@@ -4,18 +4,6 @@ function startUp() {
   resetDefault();
 }
 
-function passwordCheck() {
-  var password = document.getElementById(`password`).value;
-  if (password === `manfred`) {
-    location = `countdown-clock.html`;
-  } else {
-    password = ``;
-    document.getElementById(
-      `wrong`
-    ).innerHTML = `Incorrect password. Please try again.`;
-  }
-}
-
 function padWithNums(num, width, thing) {
   let s = `` + num;
   while (s.length < width) s = thing + s;

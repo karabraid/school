@@ -11,3 +11,7 @@ a nice green colour (for correct answers) is #33cc00
 a nice orange color (for links especially) is #f57c20
 
 a nice red color (for incorrect answers) is #fa1313
+
+crop and resize images at https://www.picresize.com
+
+customize videos at https://developers.google.com/youtube/youtube_player_demo
