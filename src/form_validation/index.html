@@ -1,0 +1,33 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="practice.css">
+    <title>Practice Makes Perfect - Or Not</title>
+</head>
+<body onload="checkForPopBlocker()">
+  
+  <form class="form" onsubmit="return checkForLastName()">
+    Please enter your last name:<br>
+    <input type="text" id="lastNameField">
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+
+  function checkForPopBlocker() {
+    var win1 = window.open("", "", "width=400, height=400, left=400, top=200");
+    if (win1 === null || typeof win1 === undefined) {
+      alert("Please disable your popup blocker.");
+    }
+    win1.close();
+  }
+
+	function checkForLastName() {
+		if (document.getElementById("lastNameField").value.length === 0) {
+      alert("Please enter your last name.");
+      document.getElementById("lastNameField").focus();
+      return false;
+    }
+  }
+  </script>
+
+</body>
+  
