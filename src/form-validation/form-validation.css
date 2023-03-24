@@ -1,0 +1,22 @@
+form {
+  border: 2px solid #57dae8;
+  background-color: #f9d2fb;
+  display: inline-block;
+  padding: 1em;
+}
+
+form2 {
+  border: 2px solid plum;
+  background-color: white;
+  display: inline-block;
+  padding: 1em;
+}
+fieldset {
+  border: 5px solid #5f0000;
+  background-color: white;
+  display: inline-block;
+  border-radius: 20px;
+}
+legend {
+  color: black;
+}
