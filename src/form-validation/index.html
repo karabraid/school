@@ -6,51 +6,67 @@
       <title>Form Validation</title>
   </head>
 
-  <body onload="checkForPopBlocker()">
+  <body>
     
-    <fieldset> 
-      
-      <legend>Form</legend>
-      
-      <br>
-      <form>
-        Your first name:<br>
-        <input type="text" id="firstNameField">
-      </form><br><br>
-      <form>
-        Your last name:<br>
-        <input type="text" id="lastNameField">
+    <div class="div1">  
+      <h2 class="h2-1">Personal Details*</h2><br>  
+      <fieldset> 
+                       
+        <legend>Name</legend>
         
-      </form><br>      
-      <form>
-        Are you under age 18?<br>
-        <input type="radio" name="b1" value="yes">yes<br>
-        <input type="radio" name="b1" value="no">no<br>
-      </form><br>
-      <form>
-        If so, please give parent's/guardian's full name:<br>
-        <input type="text" id="parentNameField"> 
-      </form> <br>  
-      <form>
-        Please select a state:<br>
-        <select id="states">
-          <option value="" selected="selected">Select a State:</option>
-          <option value="ACT">Australian Capital Territory</option>
-          <option value="NSW">New South Wales</option>
-          <option value="NT">Northen Territory</option>
-          <option value="QLD">Queensland</option>
-          <option value="WA">Western Australia</option>
-          <option value="VIC">Victoria</option>
-        </select>&nbsp;&nbsp;
-      </form><br><br>      
-      <form>
-        Your favourite animal:<br>
-        <input type="radio" name="r1" value="dog">Dog<br>
-        <input type="radio" name="r1" value="horse">Horse<br>
-        <input type="radio" name="r1" value="rabbit">Rabbit<br>
-      </form><br>
-      <button onclick="checkThings('firstNameField', 'lastNameField', 'states', 'r1', 'b1');">Submit</button>
-    </fieldset>  
+        <br>
+        <form>
+          Your first name:<br>
+          <input type="text" id="firstNameField">
+        </form><br><br>
+        <form>
+          Your last name:<br>
+          <input type="text" id="lastNameField">
+          
+        </form><br>      
+        <form>
+          Are you under age 18?<br>
+          <input type="radio" name="b1" value="yes">yes<br>
+          <input type="radio" name="b1" value="no">no<br>
+        </form><br>
+        <form>
+          If so, please give parent's/guardian's full name:<br>
+          <input type="text" id="parentNameField"> 
+        </form> <br> 
+      </fieldset><br><br>
+      
+      <fieldset>
+        <legend>Address</legend><br>
+        <form>
+          State:<br>
+          <select id="states">
+            <option value="" selected="selected">Select a State:</option>
+            <option value="ACT">Australian Capital Territory</option>
+            <option value="NSW">New South Wales</option>
+            <option value="NT">Northen Territory</option>
+            <option value="QLD">Queensland</option>
+            <option value="WA">Western Australia</option>
+            <option value="VIC">Victoria</option>
+          </select>&nbsp;&nbsp;
+        </form><br><br> 
+        <form>
+          Suberb:<br>
+          <input type="text" id="town">
+      </fieldset><br><br>
+      
+      <fieldset>
+        <legend>Personal Likes</legend>       
+        <form>
+          Your favourite animal:<br>
+          <input type="radio" name="r1" value="dog">Dog<br>
+          <input type="radio" name="r1" value="horse">Horse<br>
+          <input type="radio" name="r1" value="rabbit">Rabbit<br>
+        </form><br>
+        
+      </fieldset><br><br>
+      <button onclick="checkThings('firstNameField', 'lastNameField', 'parentNameField', 'town', 'states', 'r1', 'b1');">Submit</button>
+      <p class="p1">*Please fill out entire form.<p>
+    </div>
     
     <script>  
       function checkForPopBlocker() {
@@ -61,9 +77,11 @@
         win1.close();
       }
       
-      function checkThings(name1, name2, selected, ename1, ename2) {
+      function checkThings(name1, name2, name3, name4, selected, ename1, ename2) {
         checkForLastName(name1);
         checkForLastName(name2);
+        checkForLastName(name3);
+        checkForLastName(name4)
         checkForSelection(selected);
         chekcRadios(ename1);
         checkRadios(ename2);
