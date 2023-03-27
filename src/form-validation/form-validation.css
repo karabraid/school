@@ -1,6 +1,6 @@
 .div1 {
   border: 2px solid black;
-  background-color: #dafbda;
+  background-color: #b2d6f6;
   display: inline-block;
   border-radius: 15px;
   padding-top: 0.5em;
@@ -15,6 +15,7 @@ fieldset {
   border-radius: 20px;
   width: 400px;
 }
+
 legend {
   color: #5f0000;
   font-weight: bold;
@@ -27,4 +28,13 @@ legend {
 .p1 {
   text-align: left;
   color: #5f0000;
+}
+
+input[type="text"]:focus {
+  background-color: lightblue;
+}
+
+.text1 {
+  width: 200px;
+  height: 100px;
 }

@@ -52,19 +52,27 @@
         <form>
           Suberb:<br>
           <input type="text" id="town">
+        </form><br>
+        <form>
+          Street:<br>
+          <input type="text" id="street">
       </fieldset><br><br>
       
       <fieldset>
-        <legend>Personal Likes</legend>       
+        <legend>Likes/ Dislikes</legend>       
         <form>
           Your favourite animal:<br>
           <input type="radio" name="r1" value="dog">Dog<br>
           <input type="radio" name="r1" value="horse">Horse<br>
           <input type="radio" name="r1" value="rabbit">Rabbit<br>
-        </form><br>
+        </form><br><br>
+        <form>
+          Do you have a hobby? If so, what is it?<br>
+          <input type="text" id="hobby" class="text1">
+        </form>
         
       </fieldset><br><br>
-      <button onclick="checkThings('firstNameField', 'lastNameField', 'parentNameField', 'town', 'states', 'r1', 'b1');">Submit</button>
+      <button onclick="checkThings('firstNameField', 'lastNameField', 'parentNameField', 'town', 'street', 'states', 'r1', 'b1');">Submit</button>
       <p class="p1">*Please fill out entire form.<p>
     </div>
     
@@ -77,11 +85,12 @@
         win1.close();
       }
       
-      function checkThings(name1, name2, name3, name4, selected, ename1, ename2) {
+      function checkThings(name1, name2, name3, name4, name5, selected, ename1, ename2) {
         checkForLastName(name1);
         checkForLastName(name2);
         checkForLastName(name3);
         checkForLastName(name4)
+        checkForLastName(name5)
         checkForSelection(selected);
         chekcRadios(ename1);
         checkRadios(ename2);

@@ -1,6 +1,22 @@
+body {
+  align-items: center;
+}
 a {
   color: blue;
 }
 a:hover {
   color: #f57c20;
+}
+
+div {
+  border: 3px solid darkcyan;
+  background-color: aquamarine;
+  margin: 0 auto 0 auto;
+  width: 20%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+img {
+  width: 10em;
 }
