@@ -55,6 +55,10 @@
         <form>
           Street:<br>
           <input type="text" id="street">
+        </form><br>
+        <form>
+          ZIP code:<br>
+          <input type="text" id="zip" maxsize=5 onblur="checkZIP('zip');">
       </fieldset><br><br>
       
       <fieldset>
@@ -93,7 +97,29 @@
         checkForSelection(selected);
         chekcRadios(ename1);
         checkRadios(ename2);
-      }      
+      }
+      
+      function checkZIP(id) {
+        var zip = document.getElementById(id);
+        var zipValue = document.getElementById(id).value;
+        var zipLength = zipValue.length;
+        if (zipLength < 5) {
+          alert("Please enter a five-digit code.");
+          zip.focus();
+          zip.style.background = "#dfe857";
+          return false;
+        }
+        for (var i = 0; i <= 4; i++) {
+          var thisChar = parseInt(zipValue[i]);
+          if (isNaN(thisChar)) {
+            alert("Please enter only numbers.");
+            zip.focus();
+            zip.style.background = "#dfe857";
+            return false;
+          }
+          zip.style.background = "#dfe857";
+        }
+      }   
 
       function checkForLastName(id) {
         var targetField = document.getElementById(id);
