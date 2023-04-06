@@ -12,25 +12,30 @@
       <h2 class="h2-1">Personal Details*</h2><br>  
       <fieldset> 
                        
-        <legend>Name</legend>
+        <legend>Contact Details</legend>
         <br>
         <form>
-          Your first name:<br>
-          <input type="text" id="firstNameField">
-        </form><br><br>
+          First name:<br>
+          <input type="text" id="firstNameField" placeholder="First name..." onblur="checkForLastName('firstNameField')">
+        </form><br>
         <form>
-          Your last name:<br>
-          <input type="text" id="lastNameField">
+          Last name:<br>
+          <input type="text" id="lastNameField" placeholder="Last name..." onblur="checkForLastName('lastNameField')">
           
-        </form><br>      
+        </form><br> 
+        <form>
+          Email address:<br>
+          <input type="text" id="email" placeholder="amy@gmail.com" onblur="checkEmail('email')">
+        </form><br>   
         <form>
           Are you under age 18?<br>
-          <input type="radio" name="b1" value="yes">yes<br>
+          <input type="radio" id="radioYes" name="b1" value="yes">yes<br>
           <input type="radio" name="b1" value="no">no<br>
         </form><br>
         <form>
-          If so, please give parent's/guardian's full name:<br>
-          <input type="text" id="parentNameField"> 
+          If so, please give parent's/guardian's full name and email address:<br>
+          <input type="text" id="parentNameField" placeholder="Parent full name..."><br><br>
+          <input type="text" id="email2" placeholder="parent@gmail.com" onblur="checkEmail('email2')"> 
         </form> <br> 
       </fieldset><br><br>
       
@@ -50,19 +55,19 @@
         </form><br><br> 
         <form>
           Suberb:<br>
-          <input type="text" id="town">
+          <input type="text" id="town" placeholder="Marysville">
         </form><br>
         <form>
           Street:<br>
-          <input type="text" id="street">
+          <input type="text" id="street" placeholder="1 Aardvark Crescent">
         </form><br>
         <form>
           ZIP code:<br>
-          <input type="text" id="zip" maxlength=5 onblur="checkZIP('zip');">
+          <input type="text" id="zip" maxlength=5  minlength=5 placeholder="11111" onblur="checkZIP('zip');">
       </fieldset><br><br>
       
       <fieldset>
-        <legend>Likes/ Dislikes</legend>       
+        <legend>Likes/Dislikes</legend>       
         <form>
           Your favourite animal:<br>
           <input type="radio" name="r1" value="dog">Dog<br>
@@ -71,11 +76,11 @@
         </form><br><br>
         <form>
           Do you have a hobby? If so, what is it?<br>
-          <input type="text" id="hobby" class="text1">
+          <input type="text" id="hobby" class="text1" placeholder="Type text here...">
         </form>
         
       </fieldset><br><br>
-      <button onclick="checkThings('firstNameField', 'lastNameField', 'parentNameField', 'town', 'street', 'states', 'r1', 'b1');">Submit</button>
+      <button onclick="checkThings('firstNameField', 'lastNameField', 'parentNameField', 'town', 'street', 'states', 'r1', 'b1', 'email');">Submit</button>
       <p class="p1">*Please fill out entire form.<p>
     </div>
     
@@ -88,7 +93,7 @@
         win1.close();
       }
       
-      function checkThings(name1, name2, name3, name4, name5, selected, ename1, ename2) {
+      function checkThings(name1, name2, name3, name4, name5, selected, ename1, ename2, email) {
         checkForLastName(name1);
         checkForLastName(name2);
         checkForLastName(name3);
@@ -97,6 +102,27 @@
         checkForSelection(selected);
         chekcRadios(ename1);
         checkRadios(ename2);
+        checkEmail(email);
+      }
+      
+      function checkEmail(id) {
+        var addressIsLegal = true;
+        var e = document.getElementById(id);
+        if (e.value.indexOf(" ") !== -1) {
+          alert("No spaces allowed in email address.");
+          addressIsLegal = false;
+        }
+        if (e.value.indexOf("@") < 1 || e.value.indexOf("@") > e.value.length - 5) {
+          addressIsLegal = false;
+        }
+        if (e.value.indexOf(".") - e.value.indexOf("@") < 2 || e.value.indexOf(".") > e.value.length - 3) {
+          addressIsLegal = false;
+        }
+        if (addressIsLegal === false) {
+          alert("Your email address is not legal");
+          e.style.background = "#dfe857"; 
+          return false;         
+        }
       }
       
       function checkZIP(id) {
@@ -119,13 +145,12 @@
           }
           zip.style.background = "#dfe857";
         }
-      }   
+      }
 
       function checkForLastName(id) {
         var targetField = document.getElementById(id);
         if (targetField.value.length === 0) {
           alert("Please fill out entire form");
-          targetField.focus();
           targetField.style.background = "#dfe857";
           return false;
         }
@@ -150,6 +175,10 @@
           }
           alert("Please fill out entire form.")
           return false;
+        }
+        if (ename === 'b1' && document.getElementById("radioYes").value === "yes") {
+          checkEmail("email2");
+          checkForLastName("parentNameField");
         }
       }
       
