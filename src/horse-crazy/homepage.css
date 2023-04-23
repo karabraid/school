@@ -1,11 +1,36 @@
-h2 {
+h1 {
     font-family: "Cinzel Decorative", cursive;
     font-size: 45px;
     color: white;
 }
 
-div {
+.div1 {
+  display: block;
+  width: 1254px;
+  text-align: center;
   background-color: #5dddde;
   border: 5px solid #DDDE5D;
 }
 
+.div2 {
+  width: 1254px;
+  background-color: #5dddde;
+  border-left: 5px solid #DDDE5D;
+  border-right: 5px solid #DDDE5D;
+}
+
+.div3 {
+  width: 1254px;
+  background-color: #5dddde;
+  border-left: 5px solid #DDDE5D;
+  border-right: 5px solid #DDDE5D;
+  border-bottom: 5px solid #DDDE5D;
+}
+
+a:hover {
+  color: #f57c20;
+}
+
+.img1 {
+  height: 600px;
+}
