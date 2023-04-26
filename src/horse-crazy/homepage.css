@@ -14,6 +14,7 @@ h1 {
 
 .div2 {
   width: 1254px;
+  height: 25px;
   background-color: #5dddde;
   border-left: 5px solid #DDDE5D;
   border-right: 5px solid #DDDE5D;
@@ -21,14 +22,25 @@ h1 {
 
 .div3 {
   width: 1254px;
+  height: 600px;
   background-color: #5dddde;
   border-left: 5px solid #DDDE5D;
   border-right: 5px solid #DDDE5D;
   border-bottom: 5px solid #DDDE5D;
 }
 
+a {
+  display: inline;
+  padding: 10px;
+  color: #de5ddd;
+}
+
+p {
+  display: inline;
+}
+
 a:hover {
-  color: #f57c20;
+  color: white;
 }
 
 .img1 {
