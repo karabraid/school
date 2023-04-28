@@ -7,6 +7,7 @@ h1 {
 .div1 {
   display: block;
   width: 1254px;
+  height: 100px;
   text-align: center;
   background-color: #5dddde;
   border: 5px solid #DDDE5D;
@@ -22,7 +23,7 @@ h1 {
 
 .div3 {
   width: 1254px;
-  height: 600px;
+  height: 589px;
   background-color: #5dddde;
   border-left: 5px solid #DDDE5D;
   border-right: 5px solid #DDDE5D;
@@ -31,7 +32,7 @@ h1 {
 
 a {
   display: inline;
-  padding: 10px;
+  padding-left: 40px;
   color: #de5ddd;
 }
 
@@ -43,6 +44,6 @@ a:hover {
   color: white;
 }
 
-.img1 {
-  height: 600px;
+.img2 {
+  width: 1254px;
 }
