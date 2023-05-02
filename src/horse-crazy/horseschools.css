@@ -1,0 +1,26 @@
+.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  text-align: right;
+  background-color: #5dddde;
+  border-bottom: 3px solid #ddde5d;
+}
+
+a {
+  color: #ffffff;
+  font-family: "Cinzel Decorative", cursive;
+  background-image: url("./galloping-horse-white.png");
+  background-size: 35px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position: top right;
+  transition: color 1s, background-image 1s;
+}
+
+a:hover {
+  color: #fe99f6;
+  background-image: url("./galloping-horse-pink.png");
+}

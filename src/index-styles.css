@@ -4,20 +4,26 @@ div.sidebar {
   left: 0;
   width: 20%;
   height: 100%;
-  background-color: aquamarine;
+  background-color: #2ED9D7;
   z-index: 1;
+  text-align: center;
 }
 
 div.main {
   margin-left: 20%;
-}
-
-body {
+  text-align: center;
   align-items: center;
 }
+
+h2.decorative {
+  font-family: "Cinzel Decorative", cursive;
+  color: #ffffff;
+}
+
 a {
   color: blue;
 }
+
 a:hover {
   color: #ff41fb;
   transition: color .5s;
@@ -28,5 +34,5 @@ h2 {
 }
 
 img {
-  width: 10em;
+  width: 70%;
 }
