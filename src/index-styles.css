@@ -4,7 +4,7 @@ div.sidebar {
   left: 0;
   width: 20%;
   height: 100%;
-  background-color: #2ED9D7;
+  background-color: #2ed9d7;
   z-index: 1;
   text-align: center;
 }
@@ -22,11 +22,11 @@ h2.decorative {
 
 a {
   color: blue;
+  transition: color 0.5s;
 }
 
 a:hover {
   color: #ff41fb;
-  transition: color .5s;
 }
 
 h2 {

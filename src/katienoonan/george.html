@@ -7,11 +7,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Dancing+Script&family=Lily+Script+One&family=Marck+Script&display=swap" rel="stylesheet">    </head>
     <body>
+        <div class="sidebar">
+            <h2 class="sidebar">Songs</h2>
+            <p class="sidebar" onclick="scrollWithOffset('breathe', 0)">Breathe In Now</p>
+            <p class="sidebar" onclick="scrollWithOffset('special', 0)">Special Ones</p>
+            <p class="sidebar" onclick="scrollWithOffset('spawn', 0)">Spawn</p>
+            <p class="sidebar" onclick="scrollWithOffset('release', 0)">Release</p>
+            <p class="sidebar" onclick="scrollWithOffset('truth', 0)">Truth</p>
+        </div>
         <div class="main">
             <h1>Top 5 Katie Noonan Hits</h1><br>
-            
             <div>
-                <h2><em>Breathe in Now</em></h2>
+                <h2 id="breathe"><em>Breathe in Now</em></h2>
                 <iframe src="https://www.youtube.com/embed/TTIgKdaIsJ0">
                 </iframe>
                 <details>
@@ -51,7 +58,7 @@
             </div>
             
             <div>
-                <h2><em>Special Ones</em></h2>
+                <h2 id="special"><em>Special Ones</em></h2>
                 <iframe src="https://www.youtube.com/embed/pvtK54UeFq0">
                 </iframe>  
                 <details>
@@ -108,7 +115,7 @@
             </div>
 
             <div>
-                <h2><em>Spawn</em></h2>
+                <h2 id="spawn"><em>Spawn</em></h2>
                 <iframe src="https://www.youtube.com/embed/F5kEGaxv6mY">
                 </iframe>
                 <details>
@@ -183,7 +190,7 @@
             </div>
             
             <div>
-                <h2><em>Truth</em></h2>
+                <h2 id="truth"><em>Truth</em></h2>
                 <iframe src="https://www.youtube.com/embed/wh48mYiyX9s"></iframe>
                 <details>
                     <summary>Lyrics for <em>Truth</em></summary>

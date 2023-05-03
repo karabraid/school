@@ -1,5 +1,16 @@
+div.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 1;
+    background-color: #ff7373;
+    text-align: center;
+}
+
 div.main {
-    margin-left: 25%;
+    margin-left: 30%;
 }
 
 h1 {
@@ -11,6 +22,11 @@ h2 {
     display: block;
     font-family: "Lily Script One", cursive;
     font-size: 30px;
+}
+
+h2.sidebar {
+    font-family: "Cinzel Decorative", cursive;
+    cursor: default;
 }
 
 p {
@@ -28,4 +44,10 @@ iframe {
 
 .inline {
     display: inline;
+}
+
+p.sidebar {
+    font-family: "Cinzel Decorative", cursive;
+    font-size: 17px;
+    cursor: pointer;
 }
