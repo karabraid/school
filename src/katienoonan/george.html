@@ -9,11 +9,11 @@
     <body>
         <div class="sidebar">
             <h2 class="sidebar">Songs</h2>
-            <p class="sidebar" onclick="scrollWithOffset('breathe', 0)">Breathe In Now</p>
-            <p class="sidebar" onclick="scrollWithOffset('special', 0)">Special Ones</p>
-            <p class="sidebar" onclick="scrollWithOffset('spawn', 0)">Spawn</p>
-            <p class="sidebar" onclick="scrollWithOffset('release', 0)">Release</p>
-            <p class="sidebar" onclick="scrollWithOffset('truth', 0)">Truth</p>
+            <p class="sidebar" onclick="scrollWithOffset('breathe', 10)">Breathe In Now</p>
+            <p class="sidebar" onclick="scrollWithOffset('special', 10)">Special Ones</p>
+            <p class="sidebar" onclick="scrollWithOffset('spawn', 10)">Spawn</p>
+            <p class="sidebar" onclick="scrollWithOffset('release', 10)">Release</p>
+            <p class="sidebar" onclick="scrollWithOffset('truth', 10)">Truth</p>
         </div>
         <div class="main">
             <h1>Top 5 Katie Noonan Hits</h1><br>
@@ -151,7 +151,7 @@
             </div><br><br>
             
             <div>    
-                <h2><em>Release</em></h2>
+                <h2 id="release"><em>Release</em></h2>
                 <iframe src="https://www.youtube.com/embed/urzfTvI8I7o">
                 </iframe>
                 <details>
@@ -234,5 +234,17 @@
                 </details>
             </div>
         </div>
+        <script>
+            // THANK YOU JOSHUA!
+            function scrollWithOffset(id, headerOffset) {
+                let el = document.getElementById(id)
+                let elementPosition = el.getBoundingClientRect().top;
+                let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+                }
+        </script>
     </body>
 </html>
