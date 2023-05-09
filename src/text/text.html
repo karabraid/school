@@ -4,14 +4,14 @@
         <title>text</title>
         <link rel="stylesheet" href="text.css">
     </head>
-    <body id="body" class="light">
-        <h2 id="1h2" class="light">Written text here:</h2>
-        <p id="1p" class="light">Text... coming soon!</p>
+    <body class="light">
+        <h2 id="1h2">Written text here:</h2>
+        <p id="1p">Text... coming soon!</p>
         <!-- <button onclick="modes()">Dark/Light</button> -->
         <img id="icon" src="moon-icon.png" onclick="modes();">
         <script>
             function modes(){
-                let target = document.getElementById("body")
+                let target = document.body;
                 if (target.className === "light") {
                     target.className = "dark";
                     document.getElementById("icon").src = "sun-icon.png";
