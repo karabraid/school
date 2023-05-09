@@ -4,12 +4,27 @@ div.sidebar {
   left: 0;
   width: 20%;
   height: 100%;
+  padding-top: 30px;
   background-color: #2ed9d7;
   z-index: 1;
   text-align: center;
 }
 
+div.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 15%;
+  background-color: #7cf4fe;
+}
+
+div.footer {
+  
+}
+
 div.main {
+  margin-top: 15%;
   margin-left: 20%;
   text-align: center;
   align-items: center;
@@ -18,6 +33,13 @@ div.main {
 h2.decorative {
   font-family: "Cinzel Decorative", cursive;
   color: #ffffff;
+  text-align: center;
+}
+
+h1.decorative {
+  font-family: "Cinzel Decorative", cursive;
+  color: #4030ff;
+  text-align: center;
 }
 
 a {
@@ -34,5 +56,5 @@ h2 {
 }
 
 img {
-  width: 70%;
+  height: 450px;
 }

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>text</title>
+        <link rel="stylesheet" href="text.css">
+    </head>
+    <body id="body" class="light">
+        <h2 id="1h2" class="light">Written text here:</h2>
+        <p id="1p" class="light">Text... coming soon!</p>
+        <!-- <button onclick="modes()">Dark/Light</button> -->
+        <img id="icon" src="moon-icon.png" onclick="modes();">
+        <script>
+            function modes(){
+                let target = document.getElementById("body")
+                if (target.className === "light") {
+                    target.className = "dark";
+                    document.getElementById("icon").src = "sun-icon.png";
+                }
+                else if (target.className === "dark") {
+                    target.className = "light";
+                    document.getElementById("icon").src = "moon-icon.png";
+                }
+            }
+        </script>
+    </body>
+</html>
+
+<!-- "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn1.iconfinder.com%2Fdata%2Ficons%2Fweb-interface-65%2F32%2F34_-_Light_Dark_Mode-1024.png&f=1&nofb=1&ipt=09f168be1989766660276170d73dc4dbb626e0fe8b19c263ea94cb58f9e3904e&ipo=images" -->

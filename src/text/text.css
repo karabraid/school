@@ -1,0 +1,16 @@
+.dark {
+  color: white;
+  background-color: black;
+}
+
+body.light {
+    color: black;
+    background-color: white;
+}
+
+img {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    height: 40px;
+}
