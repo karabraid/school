@@ -1,5 +1,11 @@
 
-WEBSITES
+LINKS
 
 https://favpng.com/remove_background - removes backgrounds to create transperant images
 https://www.nicepng.com - free png image library
+
+
+BOOKMARK ICONS
+
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fendlessicons.com%2Fwp-content%2Fuploads%2F2014%2F03%2Fbookmark-icon-3.png&f=1&nofb=1&ipt=6d76f234baa0d92718fd1079b3d36abcff635b93286d8ddd9ba782c03d001877&ipo=images - bookmark icon
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbanner2.kisspng.com%2F20180329%2Fpqw%2Fkisspng-maroon-bookmark-computer-icons-separator-5abca57fd4ae63.8709470415223125758712.jpg&f=1&nofb=1&ipt=9b091cb8f86e346c6a6ca8d5d9f559a8426cdef7066aa081fae5908f636cc5ea&ipo=images - maroon bookmark icon
