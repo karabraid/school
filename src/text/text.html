@@ -10,19 +10,33 @@
     <body class="light">    
         <div class="sidebar" id="sidebar">
             <h2 class="sidebar">Contents</h2><br><br>
-            <a onclick="scrollWithOffset('1h2');" class="sidebar">Chapter 1</a>
+            <a onclick="scrollWithOffset('1',50);" class="sidebar">Chapter 1</a><br><br>
+            <a onclick="scrollWithOffset('2',50);" class="sidebar">Chapter 2</a><br><br>
+            <a onclick="scrollWithOffset('3',20);" class="sidebar">Chapter 3</a><br><br>
+            <a onclick="scrollWithOffset('4',20);" class="sidebar">Chapter 4</a><br><br>
         </div>
         <div class="menubar" id="menubar">
             <img id="icon" class="icon" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F5%2FBlack-Crescent-Moon-PNG-File.png&f=1&nofb=1&ipt=b4a7a318280efee5125f07bbe9315168722c0915534444da9eff0f9268778154&ipo=images" onclick="modes();">
-            <img id="menu" class="icon1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fnavigation-40%2F24%2Fhamburger-menu-512.png&f=1&nofb=1&ipt=4f4a2b83ade5a888be50c3931948f9d733bede6875e9320884c5b19660ce8cfe&ipo=images" onclick="hideSidebar('sidebar', 'main')">
+            <img id="menu" class="icon1" src="menu-full.png" onclick="hideSidebar('sidebar', 'main')">
         </div>
         <div id="heading" class="heading light">
             <h1 id="1h1" class="heading">Untitled</h1>
         </div>
         <div class="main" id="main">
-
-            <h2 id="1h2">Chapter 1</h2><br>
+            <br><h2 id="1" class="main">Chapter 1</h2><br>
             <p id="1p">Text... coming soon!</p>
+            
+            <br><br><h2 id="2" class="main">Chapter 2</h2><br>
+            <p id="p2">Chapter 2 text coming soon!!</p>
+            
+            <br><br><h2 id="3" class="main">Chapter 3</h2><br>
+            <p id="p2">Chapter 3 text coming soon!!</p>
+            
+            <br><br><h2 id="4" class="main">Chapter 4</h2><br>
+            <p id="p2">Chapter 4 text coming soon!!</p>
+            
+            <br><br><h2 id="5" class="main">Chapter 5</h2><br>
+            <p id="p2">Chapter 5 text coming soon!!</p>
         </div>
 
         
@@ -33,14 +47,12 @@
                 if (target.className === "light") {
                     target.className = "dark";
                     document.getElementById("heading").className = "dark";
-                    document.getElementById("icon").src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iconsdb.com%2Ficons%2Fdownload%2Fwhite%2Fsun-3-512.gif&f=1&nofb=1&ipt=a4b3108efab7162772efcdab9705e3589cf3651710d11496ab55eb88dd202010&ipo=images";
-                    document.getElementById("menu").src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fklokwerk-design.nl%2Fwp-content%2Fuploads%2F2016%2F08%2Fmenu-icon.png&f=1&nofb=1&ipt=7b5bf79363a7374ce2876351503f67e445e64b1a6824a954d07cbd323be94f21&ipo=images"
+                    document.getElementById("icon").src = "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffreevector.co%2Fwp-content%2Fuploads%2F2009%2F04%2F54241-solid-black-sun-symbol.png&f=1&nofb=1&ipt=31c43ce05020380ff52310c3b6b7e23d75f8f0116bdb0fb5de1f280a3dfae4d5&ipo=images";
                 }
                 else if (target.className === "dark") {
                     target.className = "light";
                     document.getElementById("heading").className = "light";
                     document.getElementById("icon").src = "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F5%2FBlack-Crescent-Moon-PNG-File.png&f=1&nofb=1&ipt=b4a7a318280efee5125f07bbe9315168722c0915534444da9eff0f9268778154&ipo=images";
-                    document.getElementById("menu").src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fnavigation-40%2F24%2Fhamburger-menu-512.png&f=1&nofb=1&ipt=4f4a2b83ade5a888be50c3931948f9d733bede6875e9320884c5b19660ce8cfe&ipo=images";
                 }
             }
             //Thanks Joshua!

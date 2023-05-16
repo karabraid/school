@@ -1,23 +1,35 @@
+h2 {
+  font-family: 'Bruno Ace SC', cursive;
+}
+
 body.dark {
   color: #ffffff;
   background-color: black;
+  transition: color 1s;
+  transition: background-color 1s;
 }
 
 div.dark {
   color: white;
   background-color: black;
   border-bottom: 2px solid white;
+  transition: color 1s;
+  transition: background-color 1s;
 }
 
 body.light {
   color: black;
   background-color: white;
+  transition: color 1s;
+  transition: background-color 1s;
 }
 
 div.light {
   color: black;
   background-color: white;
   border-bottom: 2px solid black;
+  transition: color 1s;
+  transition: background-color 1s;
 }
 
 div.sidebar {
@@ -44,12 +56,15 @@ h2.sidebar {
 a.sidebar {
   color: black;
   text-decoration: none;
+  font-family: 'Bruno Ace SC', cursive;
 }
 
 div.main {
   margin-left: 20%;
   margin-right: 5%;
 }
+
+
 
 div.heading {
   position: sticky;
@@ -77,7 +92,7 @@ p {
 
 div.menubar {
   position: fixed;
-  margin-top: 40px;
+  margin-top: 50px;
   border-radius: 5px;;
   background-color: rgba(191,191,191,0.5)
 }
@@ -93,5 +108,5 @@ img.icon1 {
   /* position: fixed;
   bottom: 90px;
   right: 40px; */
-  height: 40px;
+  height: 30px;
 }
