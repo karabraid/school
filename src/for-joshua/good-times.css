@@ -1,13 +1,13 @@
 body {
   /*background-color: #1FD7DE;*/
   /*background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.scienceabc.com%2Fwp-content%2Fuploads%2F2015%2F07%2FFirefly-Forest.jpg&f=1&nofb=1&ipt=1eb3487d51d4aea3a772068764fc2d894af3cf1cbd21978026c5e3c1379f472b&ipo=images");*/
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp4766445.jpg&f=1&nofb=1&ipt=0e4a9af11582012b90e8ae371c6c8f1564fcf953319732f00cc13063fe600a2f&ipo=images");
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnewevolutiondesigns.com%2Fimages%2Ffreebies%2Fgreen-wallpaper-14.jpg&f=1&nofb=1&ipt=c5305395611dd25f5b341068943c132e961d0a45fcdf1debb3dfb473172672c1&ipo=images");
   text-align: center;
 }
 
 h1 {
   font-family: "Bruno Ace", cursive;
-  color: #95ceff;
+  color: #fc0000;
   font-size: 50px;
 }
 
@@ -15,7 +15,7 @@ div.video-container {
   margin-top: 70px;
   height: 404px;
   width: 704px;
-  border: 5px solid #95ceff;
+  border: 5px solid #fc0000;
   margin-left: 21%;
 }
 
