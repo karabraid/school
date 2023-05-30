@@ -1,0 +1,23 @@
+body {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-FZnYU3pQlbk%2FT_6B0GeG6fI%2FAAAAAAAAEuc%2Fd_JPfy5D5oE%2Fs1600%2Fspace%2Bwallpaper%2B(1).jpeg&f=1&nofb=1&ipt=1d55ca0dafced90091bf0a4d04e1d9b1cceacf326a4d9b7edc49834d7be241fb&ipo=images");
+  text-align: center;
+}
+
+h1 {
+  font-family: "Bruno Ace", cursive;
+  color: #99edff;
+  font-size: 50px;
+}
+
+div.video-container {
+  margin-top: 70px;
+  height: 404px;
+  width: 704px;
+  border: 5px solid #99edff;
+  margin-left: 21%;
+}
+
+iframe {
+  height: 400px;
+  width: 700px;
+}
