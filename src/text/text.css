@@ -87,7 +87,13 @@ h1.heading {
 }
 
 p {
+  margin-right: 150px;
+  margin-left: 50px;
   text-align: justify;
+  font-size: 17px;
+  font-family: "Helvetica", sans-serif;
+  /* font-family: "Andalé Mono", monospace; */
+  /* font-family: "Monaco", monospace; */
 }
 
 div.menubar {
