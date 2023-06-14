@@ -1,0 +1,23 @@
+body {
+    /* align-items: center; */
+    /* background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FivOjO5T.jpg&f=1&nofb=1&ipt=93a6ff205d090d23c851fe593d261f3ed74d83222bc40a9a07d981c37fd75dea&ipo=images") */
+    background-image: url("owlcity2.png");
+    background-size: 100%;
+}
+
+div {
+    /* margin-left: 2%; */
+    margin-right: 70%;
+    margin-top: 20px;
+    width: 30%;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Bruno Ace", cursive;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    
+}
