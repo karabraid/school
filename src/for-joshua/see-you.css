@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feskipaper.com%2Fimages%2Fwreck-it-ralph-11.jpg&f=1&nofb=1&ipt=04a1ae82af1f900e7410262de5f0bbe8e0f05cb409089bc7b052e83351c3abcd&ipo=images");
+  background-size: 100%;
+}
+
+h1 {
+  font-family: "Bruno Ace", cursive;
+  color: white;
+  font-size: 50px;
+}
+
+div.video-container {
+  height: 404px;
+  width: 704px;
+  border: 5px solid white;
+  margin-left: 21%;
+}
+
+div {
+  margin-top: 70px;
+}
+
+iframe {
+  height: 400px;
+  width: 700px;
+}

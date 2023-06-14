@@ -1,0 +1,28 @@
+body {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.cntraveler.com%2Fphotos%2F58e7c96b72e4d21b0b662eaf%2Fmaster%2Fpass%2Ftrunk-bay-st-john-GettyImages-143686916.jpg&f=1&nofb=1&ipt=e891d9d2b9b1e7d1dd074ca37ed00dc0d567081b6907a688e1b0d30b5d4eed5f&ipo=images");
+  background-size: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Bruno Ace", cursive;
+  color: #1cc922;
+  font-size: 50px;
+}
+
+div.video-container {
+  height: 404px;
+  width: 704px;
+  /* border: 5px solid #95eafc; */
+  border: 5px solid #1cc922;
+  margin-left: 21%;
+}
+
+div {
+  margin-top: 70px;
+}
+
+iframe {
+  height: 400px;
+  width: 700px;
+}
