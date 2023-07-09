@@ -1,0 +1,10 @@
+.thing {
+    display: block;
+    height: 400px;
+    width: 700px;
+}
+
+body {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ZuNsLkwSZk-royq6re-MuwHaF4%26pid%3DApi&f=1&ipt=4d690a60430a9abaa05e2a5ef521f79599c533b1a926d0775fa42c6f65446b89&ipo=images");
+    background-size: 100%
+}
