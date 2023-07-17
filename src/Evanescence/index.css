@@ -1,9 +1,11 @@
+
+
 h2 {
-  font-family: 'Bruno Ace SC', cursive;
+  font-family: "Bruno Ace SC", cursive;
   font-size: 1.8em;
 }
 
-body.dark {
+/* body.dark {
   color: #ffffff;
   background-color: black;
   transition: color 1s;
@@ -16,32 +18,34 @@ div.dark {
   border-bottom: 2px solid white;
   transition: color 1s;
   transition: background-color 1s;
-}
+} */
 
 body.light {
-  color: black;
+  color: white;
   background-color: white;
-  transition: color 1s;
-  transition: background-color 1s;
+  /* transition: color 1s;
+  transition: background-color 1s; */
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2446128.jpg&f=1&nofb=1&ipt=c48086bf381caf0a8693438b7da95434ed6081599ee42f5a0dab20641f407869&ipo=images")
 }
 
 div.light {
   color: black;
   background-color: white;
   border-bottom: 2px solid black;
-  transition: color 1s;
-  transition: background-color 1s;
+  /* transition: color 1s;
+  transition: background-color 1s; */
 }
 
 div.sidebar {
+  color: white;
   position: fixed;
   top: 9.5%;
   left: 0;
   width: 15%;
   height: 100%;
-  background-color: grey;
   text-align: center;
   transition: transform 1s;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-4MRm475WWwM%2FUEN_vpNdlvI%2FAAAAAAAAAuY%2FMBLR3uBnDSM%2Fs1600%2FBlue%252Bwallpapers%252B4.jpg&f=1&nofb=1&ipt=cc68d8e1e8839202822a09c2abd21a9498908901c40135fd36789521878d9ce0&ipo=images")
 }
 
 div.hidden {
@@ -50,15 +54,14 @@ div.hidden {
 
 h2.sidebar {
   margin-top: 4em;
-  color: black;
   text-align: center;
   font-size: 1.5em;
 }
 
 a.sidebar {
-  color: black;
   text-decoration: none;
-  font-family: 'Bruno Ace SC', cursive;
+  cursor: pointer;
+  font-family: "Bruno Ace SC", cursive;
 }
 
 div.main {
@@ -66,15 +69,16 @@ div.main {
   margin-right: 5%;
 }
 
-
-
 div.heading {
+  color: white;
   position: sticky;
   top: 0;
   right: 0;
   left: 0;
   width: 100%;
   border-bottom: 2px solid black;
+  /* background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ft4.ftcdn.net%2Fjpg%2F02%2F43%2F84%2F59%2F360_F_243845937_Ir3PkFInaalCfZ6LUIySfl1Gnpz9JrFR.jpg&f=1&nofb=1&ipt=76b64695f60d4f77fbc45b2d71e8e3ffd574ae96df6bd5358bf1f5480e1c945e&ipo=images") */
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-4MRm475WWwM%2FUEN_vpNdlvI%2FAAAAAAAAAuY%2FMBLR3uBnDSM%2Fs1600%2FBlue%252Bwallpapers%252B4.jpg&f=1&nofb=1&ipt=cc68d8e1e8839202822a09c2abd21a9498908901c40135fd36789521878d9ce0&ipo=images");
 }
 
 div.sidebarHidden {
@@ -83,7 +87,7 @@ div.sidebarHidden {
 }
 
 h1.heading {
-  font-size: 30px;
+  font-size: 37px;
   font-family: "Bruno Ace SC", cursive;
   text-align: center;
 }
@@ -92,7 +96,7 @@ p {
   margin-right: 150px;
   margin-left: 50px;
   text-align: justify;
-  font-size: 17px;
+  font-size: 19px;
   font-family: "Helvetica", sans-serif;
   /* font-family: "Andalé Mono", monospace; */
   /* font-family: "Monaco", monospace; */
@@ -101,8 +105,8 @@ p {
 div.menubar {
   position: fixed;
   margin-top: 50px;
-  border-radius: 5px;;
-  background-color: rgba(191,191,191,0.5)
+  border-radius: 5px;
+  background-color: rgba(191, 191, 191, 0.5);
 }
 
 img.icon {

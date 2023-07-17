@@ -10,25 +10,34 @@
         <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bruno+Ace+SC&family=Shadows+Into+Light&family=Vina+Sans&display=swap" rel="stylesheet">
     </head>
     <body class="light"> 
-           
-        <div class="sidebar" id="sidebar">
+            <div class="sidebar" id="sidebar">
             <h2 class="sidebar">Contents</h2><br><br>
-            <a onclick="scrollWithOffset('1',60);" class="sidebar">Hello</a><br><br>
-            <a onclick="scrollWithOffset('2',60);" class="sidebar">Imaginary</a><br><br>
-            <a onclick="scrollWithOffset('3',60);" class="sidebar">My Immortal</a><br><br>
-            <a onclick="scrollWithOffset('4',60);" class="sidebar">My Last Breath</a><br><br>
-            <a onclick="scrollWithOffset('5',60);" class="sidebar">Taking Over Me</a><br><br>
-            <a onclick="scrollWithOffset('6',60);" class="sidebar">Whisper</a><br><br>
+            <a onclick="function thing() {
+                scrollWithOffset('1',80);
+                changebackground('pink');
+            }; thing();" class="sidebar">Hello</a><br><br>
+             
+             <a onclick="function thing() {
+                scrollWithOffset('2',80);
+                changebackground('flowers');
+            }; thing();" class="sidebar">Imaginary</a><br><br>
+            
+            <a onclick="function thing() {
+                scrollWithOffset('3',80);
+                changebackground('white');
+            }; thing();" class="sidebar">My Immortal</a><br><br>
+            
+            <a onclick="scrollWithOffset('4',80);" class="sidebar">My Last Breath</a><br><br>
+            <a onclick="scrollWithOffset('5',80);" class="sidebar">Taking Over Me</a><br><br>
+            <a onclick="scrollWithOffset('6',80);" class="sidebar">Whisper</a><br><br>
         </div>
         <div class="menubar" id="menubar">
-            <img id="icon" class="icon" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F5%2FBlack-Crescent-Moon-PNG-File.png&f=1&nofb=1&ipt=b4a7a318280efee5125f07bbe9315168722c0915534444da9eff0f9268778154&ipo=images" onclick="modes();">
+            <!-- <img id="icon" class="icon" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F5%2FBlack-Crescent-Moon-PNG-File.png&f=1&nofb=1&ipt=b4a7a318280efee5125f07bbe9315168722c0915534444da9eff0f9268778154&ipo=images" onclick="modes();"> -->
             <img id="menu" class="icon1" src="menu-full.png" onclick="hideSidebar('sidebar', 'main')">
         </div>
         <div id="heading" class="heading light">
             <h1 id="1h1" class="heading">Evanescence Lyrics</h1>
         </div>
-        
-        <iframe src="https://www.youtube.com/embed/tAZ5f2ClHIs"></iframe>
         
         <div class="main" id="main">
             <br><h2 id="1" class="main">Hello</h2><br>
@@ -286,6 +295,30 @@
                     el.classList.add("hidden")   
                 }
                 idMain.classList.add("sidebarHidden")
+            }
+
+            function changebackground(pic) {
+                switch (pic) {
+                    case "pink":
+                        document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FrcYGXIH.jpg&f=1&nofb=1&ipt=fa2d825c1ca3ec8dc2e9637afb2df1505c949f75a18df26c43e9a5f2e9767f7f&ipo=images')"
+                        document.body.style.color = "white";
+                        break;
+
+                    case "flowers":
+                        document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperboat.com%2Fwp-content%2Fuploads%2F2020%2F10%2F23%2F57871%2Fpurple-sky-08.jpg&f=1&nofb=1&ipt=0c6d453cda6fd6cb0a939b86899f41a93e8f502a03936c7c5bed9a215c5cc314&ipo=images')"
+                        document.body.style.color = "white";
+                        break;
+
+                    case "white":
+                        document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallsdesk.com%2Fwp-content%2Fuploads%2F2017%2F01%2FWhite-Flowers-Free-Download.jpg&f=1&nofb=1&ipt=d62b3f776d159fa6e3f9d5d773dfd5e46fe7b6da939daed7730b7997b0719d3e&ipo=images')";
+                        document.body.style.color = "black";
+                        break;
+
+                    // case ""
+
+                    default:
+                        break;
+                }
             }
         </script>
     </body>
