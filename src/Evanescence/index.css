@@ -1,5 +1,3 @@
-
-
 h2 {
   font-family: "Bruno Ace SC", cursive;
   font-size: 1.8em;
@@ -25,7 +23,7 @@ body.light {
   background-color: white;
   /* transition: color 1s;
   transition: background-color 1s; */
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2446128.jpg&f=1&nofb=1&ipt=c48086bf381caf0a8693438b7da95434ed6081599ee42f5a0dab20641f407869&ipo=images")
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2446128.jpg&f=1&nofb=1&ipt=c48086bf381caf0a8693438b7da95434ed6081599ee42f5a0dab20641f407869&ipo=images");
 }
 
 div.light {
@@ -45,7 +43,7 @@ div.sidebar {
   height: 100%;
   text-align: center;
   transition: transform 1s;
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-4MRm475WWwM%2FUEN_vpNdlvI%2FAAAAAAAAAuY%2FMBLR3uBnDSM%2Fs1600%2FBlue%252Bwallpapers%252B4.jpg&f=1&nofb=1&ipt=cc68d8e1e8839202822a09c2abd21a9498908901c40135fd36789521878d9ce0&ipo=images")
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-4MRm475WWwM%2FUEN_vpNdlvI%2FAAAAAAAAAuY%2FMBLR3uBnDSM%2Fs1600%2FBlue%252Bwallpapers%252B4.jpg&f=1&nofb=1&ipt=cc68d8e1e8839202822a09c2abd21a9498908901c40135fd36789521878d9ce0&ipo=images");
 }
 
 div.hidden {
