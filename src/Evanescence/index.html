@@ -27,9 +27,18 @@
                 changebackground('white');
             }; thing();" class="sidebar">My Immortal</a><br><br>
             
-            <a onclick="scrollWithOffset('4',80);" class="sidebar">My Last Breath</a><br><br>
+            <a onclick="function thing() {
+                scrollWithOffset('4',80);
+                changebackground('breath');
+            } thing();" class="sidebar">My Last Breath</a><br><br>
+            
             <a onclick="scrollWithOffset('5',80);" class="sidebar">Taking Over Me</a><br><br>
             <a onclick="scrollWithOffset('6',80);" class="sidebar">Whisper</a><br><br>
+            
+            <a onclick="function thing () {
+                scrollWithOffset('7',80);
+                changebackground('under');
+            }; thing();" class="sidebar">Going Under</a><br><br>
         </div>
         <div class="menubar" id="menubar">
             <img id="icon" class="icon" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F5%2FBlack-Crescent-Moon-PNG-File.png&f=1&nofb=1&ipt=b4a7a318280efee5125f07bbe9315168722c0915534444da9eff0f9268778154&ipo=images" onclick="modes();">
@@ -258,6 +267,47 @@
             Servatis a maleficum<br>
             Servatis a periculum
             </p>
+
+            <br><br><h2 id="7" class="main">Going Under</h2><br>
+            <p id="p7">Now I will tell you what I've done for you<br>
+            Fifty thousand tears I've cried,<br>
+            Screaming, deceiving, and bleeding for you<br>
+            And you still won't hear me (going under)<br><br>
+            Don't want your hand this time, I'll save myself<br>
+            Maybe I'll wake up for once (wake up for once)<br>
+            Not tormented daily defeated by you<br>
+            Just when I thought I'd reached the bottom<br><br>
+            I'm dying again<br>
+            I'm going under (going under)<br>
+            Drowning in you (drowning in you)<br>
+            I'm falling forever (falling forever)<br>
+            I've got to break through<br>
+            I'm going under<br><br>
+            Blurring and stirring the truth and the lies (so I don't know what's real)<br>
+            (So I don't know what's real and what's not)<br>
+            (Don't know what's real and what's not)<br>
+            Always confusing the thoughts in my head<br>
+            So I can't trust myself anymore<br><br>
+            I'm dying again<br>
+            I'm going under (going under)<br>
+            Drowning in you (drowning in you)<br>
+            I'm falling forever (falling forever)<br>
+            I've got to break through<br><br>
+            So go on and scream, scream at me<br>
+            I'm so far away (so far away)<br>
+            I won't be broken again (again)<bR>
+            I've got to breathe<br>
+            I can't keep going under<Br><br>
+            I'm dying again<br>
+            I'm going under (going under)<Br>
+            Drowning in you (drowning in you)<br>
+            I'm falling forever (falling forever)<br>
+            I've got to break through<br>
+            I'm going under (going under)<br>
+            Going under (drowning in you)<br>
+            I'm going under
+            </p>
+
         </div>
         <script>
             
@@ -300,20 +350,42 @@
                     case "pink":
                         document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FrcYGXIH.jpg&f=1&nofb=1&ipt=fa2d825c1ca3ec8dc2e9637afb2df1505c949f75a18df26c43e9a5f2e9767f7f&ipo=images')"
                         document.body.style.color = "white";
+                        let side1 = document.getElementById("sidebar");
+                        side1.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffunpeep.com%2Fwp-content%2Fuploads%2F2014%2F04%2Fpink-wallpapers-background.jpg&f=1&nofb=1&ipt=9f121f8f9553b8fff4590ddcbdaa797f9edd06d101102f00442c216ab12bd082&ipo=images')";
+                        document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F--F-gsIi_Ffs%2FUIVdwl1VmFI%2FAAAAAAAAL20%2FK4bbzF5pxo8%2Fs1600%2FAbstract%2BPink%2BWallpapers%2B2.jpg&f=1&nofb=1&ipt=82cc896f8ac68c15e8019f1dcffb21fc9775af32c3c1cc957a8e3d9b5f898418&ipo=images')";
                         break;
-
-                    case "flowers":
+                    
+                        case "flowers":
                         document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperboat.com%2Fwp-content%2Fuploads%2F2020%2F10%2F23%2F57871%2Fpurple-sky-08.jpg&f=1&nofb=1&ipt=0c6d453cda6fd6cb0a939b86899f41a93e8f502a03936c7c5bed9a215c5cc314&ipo=images')"
                         document.body.style.color = "white";
+                        let side2 = document.getElementById("sidebar");
+                        side2.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2FwgcoyDM.jpg&f=1&nofb=1&ipt=a1b3d10e6b0247011f06247adbdb30ab500827dda3025a7412f89ee7e7c4db71&ipo=images')";
+                        document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2F5PU1LBH.jpg&f=1&nofb=1&ipt=8075709c7ecf48a9ccddb9d9029a041a18c8a59906d42fd6900e6b50589ac85d&ipo=images')";
                         break;
 
                     case "white":
-                        document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallsdesk.com%2Fwp-content%2Fuploads%2F2017%2F01%2FWhite-Flowers-Free-Download.jpg&f=1&nofb=1&ipt=d62b3f776d159fa6e3f9d5d773dfd5e46fe7b6da939daed7730b7997b0719d3e&ipo=images')";
+                        document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fc9%2Fdc%2F29%2Fc9dc296920b363695da0fe9ad3cd1cad.jpg&f=1&nofb=1&ipt=2880cac35dcd3b0e165d3c8bfa4f6307f8d91feb083f0b00de31c5c95b79ad4b&ipo=images')";
                         document.body.style.color = "black";
+                        let side3 = document.getElementById("sidebar");
+                        side3.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.zastavki.com%2Fpictures%2F1600x1200%2F2009%2FDrawn_wallpapers_The_field_of_white_flowers_013454_.jpg&f=1&nofb=1&ipt=32c78809ad191087dd98f8079927f12d119f4d289aaee98df69805aba1d79015&ipo=images')";
+                        let head3 = document.getElementById("heading");
+                        head3.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.zastavki.com%2Fpictures%2F1600x1200%2F2009%2FDrawn_wallpapers_The_field_of_white_flowers_013454_.jpg&f=1&nofb=1&ipt=32c78809ad191087dd98f8079927f12d119f4d289aaee98df69805aba1d79015&ipo=images')";
                         break;
 
-                    // case ""
-
+                    case "under":
+                        // document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F27%2F32%2FYLA8JN.jpg&f=1&nofb=1&ipt=4c0f69d8152a113f4bf027ba118f1c74f7cd73c7341d95547c76c3f511f1b869&ipo=images')";
+                        // document.body.style.backgroundSize = "1675px"
+                        document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpre10.deviantart.net%2F2614%2Fth%2Fpre%2Fi%2F2015%2F032%2F1%2Fd%2F___drowning_in_sorrow____by_lightcolorsart-d8gceqq.png&f=1&nofb=1&ipt=d838d7c09c9a51f1c214732a0d79b6a888b513da6ffdd25c61f1c0d9c024c96c&ipo=images')"
+                        document.body.style.backgroundSize = "1520px";
+                        document.body.style.color = "white";
+                        document.getElementById("sidebar").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdwallpaperslife.com%2Fwp-content%2Fuploads%2F2018%2F12%2Fgirl_underwater_dream_4k.jpg&f=1&nofb=1&ipt=1f90bbdebb9765a510f47f497a80a9cc931aebf9af55027256b49f024ec04cd8&ipo=images')";
+                        document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdwallpaperslife.com%2Fwp-content%2Fuploads%2F2018%2F12%2Fgirl_underwater_dream_4k.jpg&f=1&nofb=1&ipt=1f90bbdebb9765a510f47f497a80a9cc931aebf9af55027256b49f024ec04cd8&ipo=images')"
+                        break;
+                    
+                    case "breath":
+                        document.body.style.backgroundImage = "url('https://images.alphacoders.com/593/593281.jpg')"
+                        document.body.style.backgroundSize = "2100px"
+                    
                     default:
                         break;
                 }
