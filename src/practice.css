@@ -13,6 +13,12 @@ p.important {
   font-weight: 900;
 }
 
+p.moreReadable {
+  text-align: right;
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+
 .typewriter {
   font-family: "Courier New", Courier, monospace;
 }
@@ -21,6 +27,7 @@ p.important {
   font-style: italic;
 }
 
-.red {
+.thing {
+  text-align: right;
   color: red;
 }
