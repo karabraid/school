@@ -1,10 +1,8 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Fallen</title>
-        <link rel="stylesheet" href="fallen.css">
-        <!-- <link rel="icon" type="image/png" href="../HorseFavicon1.png"> -->
-        <!-- <link rel="icon" type="image/png" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.clipartmax.com%2Fpng%2Fmiddle%2F15-151585_books-books-icon-png-black.png&f=1&nofb=1&ipt=4183c8ffccc6c90ce05f59bb58ba41972274f03152d4efccb50b896a7aae010d&ipo=images"> -->
+        <title>The Open Door</title>
+        <link rel="stylesheet" href="openDoor.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Charm&family=Norican&family=Shadows+Into+Light&family=Vina+Sans&display=swap" rel="stylesheet">
@@ -13,10 +11,11 @@
 
         <div class="sidebar" id="sidebar">
             <h2 class="sidebar">Contents</h2><br><br>
+            
             <a onclick="function thing() {
                 scrollWithOffset('1',80);
-                changebackground('pink');
-            }; thing();" class="sidebar">Hello</a><br><br>
+                changebackground('lithium');
+            }; thing();" class="sidebar">Lithium</a><br><br>
              
             <a onclick="function thing() {
                 scrollWithOffset('2',80);
@@ -53,24 +52,38 @@
             <img id="menu" class="icon1" src="menu-full.png" onclick="hideSidebar('sidebar', 'main')">
         </div>
         <div id="heading" class="heading light">
-            <h1 id="1h1" class="heading">Fallen Lyrics</h1>
+            <h1 id="1h1" class="heading">The Open Door Lyrics</h1>
         </div>
         
         <div class="main" id="main">
-            <br><h2 id="1" class="main">Hello</h2><br>
-            <p id="1p">Playground school bell rings again<br>
-            Rain clouds come to play again<br>
-            Has no one told you she's not breathing?<br>
-            Hello, I'm your mind giving you someone to talk to<br>
-            Hello<br><br>
-            If I smile and don't believe<br>
-            Soon I know I'll wake from this dream<br>
-            Don't try to fix me I'm not broken<br>
-            Hello, I'm the lie living for you so you can hide<br>
-            Don't cry<br><br>
-            Suddenly I know I'm not sleeping<br>
-            Hello, I'm still here<br>
-            All that's left of yesterday<br>
+            <br><h2 id="1" class="main">Lithium</h2><br>
+            <p id="1p">Lithium, don't wanna lock me up inside<br>
+                Lithium, don't wanna forget how it feels without<br>
+                Lithium, I wanna stay in love with my sorrow<br>
+                Oh, but God I wanna let it go<br><br>
+                Come to bed, don't make me sleep alone<br>
+                Couldn't hide the emptiness, you let it show<br>
+                Never wanted it to be so cold<br>
+                Just didn't drink enough to say you love me<br><br>
+                I can't hold on to me<br>
+                Wonder what's wrong with me?<br>
+                Lithium, don't wanna lock me up inside<br>
+                Lithium, don't wanna forget how it feels without<br>
+                Lithium, I wanna stay in love with my sorrow, oh<br><br>
+                Don't wanna let it lay me down this time<br>
+                Drown my will to fly<br>
+                Here in the darkness I know myself<br>
+                Can't break free until I let it go, let me go<BR><br>
+                Darling, I forgive you after all<br>
+                Anything is better than to be alone<br>
+                And in the end I guess I had to fall<bR>
+                Always find my place among the ashes<bR><br>
+                I can't hold on to me<bR>
+                Wonder what's wrong with me?<br><br>
+                Lithium, don't wanna lock me up inside<br>
+                Lithium, don't wanna forget how it feels without<bR>
+                Lithium, in love with you<bR>
+                Oh, I'm gonna let it go<br>
             </p>
                 
             
@@ -355,12 +368,12 @@
 
             function changebackground(pic) {
                 switch (pic) {
-                    case "pink":
-                        document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FrcYGXIH.jpg&f=1&nofb=1&ipt=fa2d825c1ca3ec8dc2e9637afb2df1505c949f75a18df26c43e9a5f2e9767f7f&ipo=images')"
+                    case "lithium":
+                        document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2FhfNDoCH.jpg&f=1&nofb=1&ipt=b1093b6ac68a4712bef7a1ec958300f5604e5388bde130b9ce2dd74d99c1b62c&ipo=images')"
                         document.body.style.color = "white";
                         let side1 = document.getElementById("sidebar");
-                        side1.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffunpeep.com%2Fwp-content%2Fuploads%2F2014%2F04%2Fpink-wallpapers-background.jpg&f=1&nofb=1&ipt=9f121f8f9553b8fff4590ddcbdaa797f9edd06d101102f00442c216ab12bd082&ipo=images')";
-                        document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F--F-gsIi_Ffs%2FUIVdwl1VmFI%2FAAAAAAAAL20%2FK4bbzF5pxo8%2Fs1600%2FAbstract%2BPink%2BWallpapers%2B2.jpg&f=1&nofb=1&ipt=82cc896f8ac68c15e8019f1dcffb21fc9775af32c3c1cc957a8e3d9b5f898418&ipo=images')";
+                        side1.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2FGxXov9N.jpg&f=1&nofb=1&ipt=3057896aff760a17381b9d7871a5113ee9de38933801fc45491be67c46a1cb0b&ipo=images')";
+                        document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2FGxXov9N.jpg&f=1&nofb=1&ipt=3057896aff760a17381b9d7871a5113ee9de38933801fc45491be67c46a1cb0b&ipo=images')";
                         break;
                     
                         case "flowers":
