@@ -2,12 +2,12 @@
 <html>
     <head>
         <title>Evanescence</title>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="fallen.css">
         <!-- <link rel="icon" type="image/png" href="../HorseFavicon1.png"> -->
         <!-- <link rel="icon" type="image/png" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.clipartmax.com%2Fpng%2Fmiddle%2F15-151585_books-books-icon-png-black.png&f=1&nofb=1&ipt=4183c8ffccc6c90ce05f59bb58ba41972274f03152d4efccb50b896a7aae010d&ipo=images"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bruno+Ace+SC&family=Shadows+Into+Light&family=Vina+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Charm&family=Norican&family=Shadows+Into+Light&family=Vina+Sans&display=swap" rel="stylesheet">
     </head>
     <body class="light"> 
 
@@ -33,8 +33,15 @@
                 changebackground('breath');
             } thing();" class="sidebar">My Last Breath</a><br><br>
             
-            <a onclick="scrollWithOffset('5',80);" class="sidebar">Taking Over Me</a><br><br>
-            <a onclick="scrollWithOffset('6',80);" class="sidebar">Whisper</a><br><br>
+            <a onclick="function thing() {
+                scrollWithOffset('5',80);
+                changebackground('over');
+            } thing();" class="sidebar">Taking Over Me</a><br><br>
+            
+            <a onclick="function thing() {
+                scrollWithOffset('6',80);
+                changebackground('whisper');
+            } thing();" class="sidebar">Whisper</a><br><br>
             
             <a onclick="function thing () {
                 scrollWithOffset('7',80);
@@ -386,7 +393,27 @@
                     case "breath":
                         document.body.style.backgroundImage = "url('https://images.alphacoders.com/593/593281.jpg')"
                         document.body.style.backgroundSize = "2100px"
-                    
+                        document.body.style.color = "white";
+                        document.getElementById("sidebar").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F76%2F90%2FUPyM1o.png&f=1&nofb=1&ipt=6c5df9649ede8537e503f1b1ee8161c64911c36b9cf84f73a7f2bef5d364b249&ipo=images')";
+                        document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F76%2F90%2FUPyM1o.png&f=1&nofb=1&ipt=6c5df9649ede8537e503f1b1ee8161c64911c36b9cf84f73a7f2bef5d364b249&ipo=images')";
+                        break;
+
+                    case "over":
+                        document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6553080.jpg&f=1&nofb=1&ipt=c8e6e977fe5881bb116c73af87937523dfe84b5ff5a62dc30ba764e3c364658d&ipo=images')"
+                        document.body.style.backgroundSize = "3000px"
+                        document.body.style.color = "white";
+                        document.getElementById("sidebar").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6553128.jpg&f=1&nofb=1&ipt=a3e6b1f5e023f3f721c107fc7173cc240893d71b41d0ab35dd1052d496dadc1b&ipo=images')";
+                        document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6553128.jpg&f=1&nofb=1&ipt=a3e6b1f5e023f3f721c107fc7173cc240893d71b41d0ab35dd1052d496dadc1b&ipo=images')";
+                        break;
+
+
+                    case "whisper":
+                        document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2FdxaDz8c.jpg&f=1&nofb=1&ipt=c217b97086b9598ad84533b2c76e15c747b186cbc6f5f01454cfc274026aabb1&ipo=images')"
+                        document.body.style.color = "white";
+                        document.getElementById("sidebar").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F06%2FBlack-and-Red-Abstract-Free-Wallpaper.jpg&f=1&nofb=1&ipt=5ddf7962d4e289c65b0255c86cb19fe895183de7c5def19c0da566cba56a1d4b&ipo=images')";
+                        document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F06%2FBlack-and-Red-Abstract-Free-Wallpaper.jpg&f=1&nofb=1&ipt=5ddf7962d4e289c65b0255c86cb19fe895183de7c5def19c0da566cba56a1d4b&ipo=images')";
+                        break;
+
                     default:
                         break;
                 }
