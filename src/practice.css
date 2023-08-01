@@ -14,9 +14,10 @@ p.important {
 }
 
 p.moreReadable {
-  text-align: right;
+  text-align: left;
   font-size: 0.9em;
   line-height: 1.8em;
+  text-indent: 1em;
 }
 
 .typewriter {
@@ -27,7 +28,12 @@ p.moreReadable {
   font-style: italic;
 }
 
-.thing {
-  text-align: right;
-  color: red;
+.evanescence {
+  color: #0d580c;
+}
+
+blockquote {
+  font-family: "Norican", cursive;
+  font-size: 2em;
+  text-align: left;
 }
