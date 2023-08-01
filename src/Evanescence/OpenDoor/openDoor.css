@@ -1,9 +1,14 @@
+audio {
+  height: 25px;
+  z-index: 1;
+}
+
 h2 {
     font-family: "Bruno Ace SC", cursive;
     font-size: 1.8em;
   }
   
-  body.light {
+body.light {
     color: white;
     background-color: white;
 
@@ -50,6 +55,7 @@ h2 {
   }
   
   div.heading {
+    z-index: 2;
     color: white;
     position: sticky;
     top: 0;
