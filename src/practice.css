@@ -18,6 +18,7 @@ p.moreReadable {
   font-size: 0.9em;
   line-height: 1.8em;
   text-indent: 1em;
+  margin-left: 6em;
 }
 
 .typewriter {
@@ -36,4 +37,13 @@ blockquote {
   font-family: "Norican", cursive;
   font-size: 2em;
   text-align: left;
+}
+.border {
+  text-align: center;
+  margin-left: 10em;
+  margin-right: 10em;
+  border-top: 10px ridge #0dd0e6;
+  border-right: 10px ridge red;
+  border-bottom: 10px ridge #00ee44;
+  border-left: 10px ridge darkviolet;
 }
