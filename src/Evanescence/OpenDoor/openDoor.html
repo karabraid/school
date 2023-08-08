@@ -56,6 +56,11 @@
                 scrollWithOffset('9',80);
                 changebackground('living');
             }; thing();" class="sidebar">All That I'm Living For</a><br><br>
+
+            <a onclick="function thing() {
+                scrollWithOffset('10',80);
+                changebackground('good');
+            }; thing();" class="sidebar">Good Enough</a><br><br>
         </div>
         <div class="menubar" id="menubar">
             <img id="icon" class="icon" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F5%2FBlack-Crescent-Moon-PNG-File.png&f=1&nofb=1&ipt=b4a7a318280efee5125f07bbe9315168722c0915534444da9eff0f9268778154&ipo=images" onclick="modes();">
@@ -395,6 +400,38 @@
                 Should I lock the last open door, my ghosts are gaining on me<br>
             </p>
 
+            <br><br><h2 id="10" class="main">Good Enough</h2><br>
+            <audio src="GoodEnough.mp3" controls></audio>
+            <p id="p10">Under your spell again<br>
+                I can't say no to you<br>
+                Crave my heart and it's bleeding in your hand<br>
+                I can't say no to you<br><br>
+                Shouldn't have let you torture me so sweetly<br>
+                Now I can't let go of this dream<bR>
+                I can't breathe, but I feel<bR><br>
+                Good enough<br>
+                I feel good enough for you<br><br>
+                Drink up sweet decadence<br>
+                I can't say no to you<br>
+                And I've completely lost myself and I don't mind<bR>
+                I can't say no to you<bR>
+                Shouldn't have let you conquer me completely<br>
+                Now I can't let go of this dream<br>
+                Can't believe that I feel<br><br>
+                Good enough<br>
+                I feel good enough<br>
+                It's been such a long time coming<br>
+                But I feel good<br><br>
+                And I'm still waiting for the rain to fall<br>
+                Pour real life down on me<br>
+                'Cause I can't hold on to anything this good<br>
+                Enough<br>
+                Am I good enough<br>
+                For you to love me too?<br><br>
+                So take care what you ask of me<br>
+                'Cause I can't say no
+            </p>
+
         </div>
         <script>
             
@@ -505,6 +542,14 @@
                         document.body.style.color = "white";
                         document.getElementById("sidebar").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F10%2FBlack-and-Orange-WidescreenBackground.png&f=1&nofb=1&ipt=e48b8170ee2eebd55c9c76a6a635cac95bcd191dc3405fa431a613efd8573fe1&ipo=images')";
                         document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F10%2FBlack-and-Orange-WidescreenBackground.png&f=1&nofb=1&ipt=e48b8170ee2eebd55c9c76a6a635cac95bcd191dc3405fa431a613efd8573fe1&ipo=images')";
+                        break;
+
+
+                    case "good":
+                        document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F24%2F51%2FZS5rsB.png&f=1&nofb=1&ipt=13df891e96d6b9be86f49315ab5893baff3bd7fdf52191cbbfb3e0a5aff20cbd&ipo=images')"
+                        document.body.style.color = "black";
+                        document.getElementById("sidebar").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2469519.jpg&f=1&nofb=1&ipt=48364c9a9c21201ced9aed48b0d3bcd00b27322792c5201d4a9ab7e9f8e5bc00&ipo=images')";
+                        document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2469519.jpg&f=1&nofb=1&ipt=48364c9a9c21201ced9aed48b0d3bcd00b27322792c5201d4a9ab7e9f8e5bc00&ipo=images')";
                         break;
 
                     default:
