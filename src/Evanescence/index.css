@@ -1,16 +1,20 @@
+body {
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F11%2FFree-Desktop-Evanescence-Pictures.jpg&f=1&nofb=1&ipt=b098994a046be1e92923433759936c2b25cd65a798887e8aca61f6adbbae1974&ipo=images');
+  background-size: 100%;
+}
+
 iframe {
   width: 700px;
   height: 400px;
 }
 
-h2.head {
-  font-family: "Norican", cursive;
-  font-size: 2em;
-}
-
 a {
   font-family: "Charm", cursive;
-  color: "black";
+  font-size: 2em;
+  color: white;
+  font-style: italic;
   text-decoration: none;
   cursor: pointer;
+  margin-left: 5%;
+  padding-top: 30px;
 }
