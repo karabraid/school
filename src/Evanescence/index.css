@@ -1,3 +1,8 @@
+audio {
+  height: 0px;
+  background-color: black;
+}
+
 body {
   background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F11%2FFree-Desktop-Evanescence-Pictures.jpg&f=1&nofb=1&ipt=b098994a046be1e92923433759936c2b25cd65a798887e8aca61f6adbbae1974&ipo=images');
   background-size: 100%;
