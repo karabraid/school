@@ -37,13 +37,35 @@ blockquote {
   font-family: "Norican", cursive;
   font-size: 2em;
   text-align: left;
+  font-variant: small-caps;
 }
-.border {
+
+h3 {
   text-align: center;
-  margin-left: 10em;
-  margin-right: 10em;
-  border-top: 10px ridge #0dd0e6;
-  border-right: 10px ridge red;
-  border-bottom: 10px ridge #00ee44;
-  border-left: 10px ridge darkviolet;
+  margin-left: 20em;
+  margin-right: 20em;
+}
+
+.border1 {
+  border: 10px ridge #0dd0e6;
+  padding: 0.5em;
+}
+
+.border2 {
+  border: 10px groove green;
+  padding: 0.5em;
+}
+
+.border3 {
+  border: 10px inset red;
+  padding: 0.5em;
+}
+
+.border4 {
+  border: 10px outset yellow;
+  padding: 0.5em;
+}
+
+.extreme {
+  font-style: italic;
 }

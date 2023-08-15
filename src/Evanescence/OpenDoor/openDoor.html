@@ -10,61 +10,89 @@
     <body class="light"> 
 
         <div class="sidebar" id="sidebar">
-            <h2 class="sidebar">Contents</h2><br>
+            <h3 class="sidebar">Contents</h3><br>
             
             <a onclick="function thing() {
                 scrollWithOffset('1',80);
                 changebackground('sweet');
+                play('sweet');
             }; thing();" class="sidebar">Sweet Sacrifice</a><br><br>
              
             <a onclick="function thing() {
                 scrollWithOffset('2',80);
                 changebackground('sober');
+                play('call');
             }; thing();" class="sidebar">Call Me When You're Sober</a><br><br>
             
             <a onclick="function thing() {
                 scrollWithOffset('3',80);
                 changebackground('weight');
+                play('weight');
             }; thing();" class="sidebar">Weight of the World</a><br><br>
             
             <a onclick="function thing() {
                 scrollWithOffset('4',80);
                 changebackground('lithium');
+                play('lithium');
             } thing();" class="sidebar">Lithium</a><br><br>
             
             <a onclick="function thing() {
                 scrollWithOffset('5',80);
                 changebackground('nine');
+                play('cloud');
             } thing();" class="sidebar">Cloud Nine</a><br><br>
             
             <a onclick="function thing() {
                 scrollWithOffset('6',80);
                 changebackground('queen');
+                play('snow');
             } thing();" class="sidebar">Snow White Queen</a><br><br>
+
+            <a onclick="function thing() {
+                scrollWithOffset('11',80);
+                changebackground('lacrymosa');
+                play('lacrymosa');
+            } thing();" class="sidebar">Lacrymosa</a><br><br>
             
             <a onclick="function thing () {
                 scrollWithOffset('7',80);
                 changebackground('you');
+                play('like');
             }; thing();" class="sidebar">Like You</a><br><br>
+
+            <a onclick="function thing() {
+                scrollWithOffset('12',80);
+                changebackground('lose');
+                play('lose');
+            } thing();" class="sidebar">Lose Control</a><br><br>
 
             <a onclick="function thing () {
                 scrollWithOffset('8',80);
                 changebackground('only');
+                play('only');
             }; thing();" class="sidebar">The Only One</a><br><br>
+
+            <a onclick="function thing () {
+                scrollWithOffset('13',80);
+                changebackground('your');
+                play('your');
+            }; thing();" class="sidebar">Your Star</a><br><br>
             
             <a onclick="function thing () {
                 scrollWithOffset('9',80);
                 changebackground('living');
+                play('living');
             }; thing();" class="sidebar">All That I'm Living For</a><br><br>
 
             <a onclick="function thing() {
                 scrollWithOffset('10',80);
                 changebackground('good');
+                play('good');
             }; thing();" class="sidebar">Good Enough</a><br><br>
         </div>
-        <div class="menubar" id="menubar">
+        <!-- <div class="menubar" id="menubar">
             <img id="icon" class="icon" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F5%2FBlack-Crescent-Moon-PNG-File.png&f=1&nofb=1&ipt=b4a7a318280efee5125f07bbe9315168722c0915534444da9eff0f9268778154&ipo=images" onclick="modes();">
-            <!-- <img id="menu" class="icon1" src="../menu-full.png" onclick="hideSidebar('sidebar', 'main')"> -->
+            <img id="menu" class="icon1" src="../menu-full.png" onclick="hideSidebar('sidebar', 'main')"> -->
         </div>
         <div id="heading" class="heading light">
             <h1 id="1h1" class="heading">The Open Door Lyrics</h1>
@@ -72,7 +100,7 @@
         
         <div class="main" id="main">
             <br><h2 id="1" class="main">Sweet Sacrifice</h2><br>
-            <audio src="SweetSacrifice.mp3" controls></audio>
+            <audio id="sweetMp3" src="SweetSacrifice.mp3" controls></audio>
             <p id="1p">It's true, we're all a little insane<br>
                 But it's so clear<br>
                 Now that I am unchained<br><br>
@@ -110,8 +138,8 @@
                 
             
             <br><br><h2 id="2" class="main">Call Me When You're Sober</h2><br>
-            <audio src="CallMeWhenYoureSober.mp3" controls></audio><br>
-            <audio src="CallKaraoke.mp3" controls></audio><br>
+            <audio id="callMp3" src="CallMeWhenYoureSober.mp3" controls></audio><br>
+            <p class="karaoke">Karaoke Version:&nbsp;&nbsp;<audio src="CallKaraoke.mp3" controls></audio></p><br>
             <p id="p2">Don't cry to me<br>
                 If you loved me, you would be here with me<br>
                 You want me? Come find me<br>
@@ -146,7 +174,7 @@
             </p>
             
             <br><br><h2 id="3" class="main">Weight of the World</h2><br>
-            <audio src="WeightOfTheWorld.mp3" controls></audio>
+            <audio id="weightMp3" src="WeightOfTheWorld.mp3" controls></audio>
             <p id="p2">Feels like the weight of the world<br><Br>
                 Like God in heaven gave me a turn<br>
                 Don't cling to me, I swear I can't fix you<br>
@@ -169,8 +197,8 @@
             </p>
             
             <br><br><h2 id="4" class="main">Lithium</h2><br>
-            <audio src="Lithium.mp3" controls></audio><br>
-            <audio src="LithiumKaraoke.mp3" controls></audio><br>
+            <audio id="lithiumMp3" src="Lithium.mp3" controls></audio><br>
+            <p class="karaoke">Karaoke Version:&nbsp;&nbsp;<audio src="LithiumKaraoke.mp3" controls></audio><br>
             <p id="p2">Lithium, don't wanna lock me up inside<br>
                 Lithium, don't wanna forget how it feels without<br>
                 Lithium, I wanna stay in love with my sorrow<br>
@@ -201,7 +229,7 @@
             </p>
             
             <br><br><h2 id="5" class="main">Cloud Nine</h2><br>
-            <audio src="CloudNine.mp3" controls></audio>
+            <audio id="cloudMp3" src="CloudNine.mp3" controls></audio>
             <p id="p2">If you want to live, let live<br>
                 If you want to go, let go<br>
                 I'm not afraid to dream, to sleep, sleep forever<br>
@@ -228,9 +256,9 @@
                 No light to lead the way<br>
                 Remember that all alone is where I belong
             </p>
-            
+                            
             <br><br><h2 id="6" class="main">Snow White Queen</h2><br>
-            <audio src="SnowWiteQueen.mp3" controls></audio>
+            <audio id="snowMp3" src="SnowWiteQueen.mp3" controls></audio>
             <p id="p2">Stoplight, lock the door<br>
                 Don't look back<br>
                 Undress in the dark<br>
@@ -266,8 +294,33 @@
                 All I want is you<br>
             </p>
 
+            <br><br><h2 id="11" class="main">Lacrymosa</h2><br>
+            <audio id="lacrymosaMp3" src="Lacrymosa.mp3" controls></audio>
+            <p id="p11">Out on your own<br>
+                Cold and alone again<br>
+                Can this be what you really wanted, baby?<br><br>
+                Blame it on me<br>
+                Set your guilt free<br>
+                Nothing can hold you back now<br><br>
+                Now that you're gone<br>
+                Feel like myself again<br>
+                Grieving the things I can't repair and willing<br><br>
+                To let you blame it on me<br>
+                And set your guilt free<br>
+                I don't want to hold you back now, love<br><br>
+                I can't change who I am<br>
+                Not this time<br>
+                I won't lie to keep you near me<br><br>
+                And in this short life<br>
+                There's no time to waste on giving up<br>
+                My love wasn't enough<br><br>
+                And you can blame it on me<br>
+                Just set your guilt free, honey<br>
+                I don't want to hold you back now, love<br>
+            </p>
+
             <br><br><h2 id="7" class="main">Like You</h2><br>
-            <audio src="LikeYou.mp3" controls></audio>
+            <audio id="likeMp3" src="LikeYou.mp3" controls></audio>
             <p id="p7">Stay low<br>
                 Soft, dark, and dreamless<br>
                 Far beneath my nightmares and loneliness<br>
@@ -305,9 +358,36 @@
                 And I'm not grieving for you<br>
                 I'm coming for you
             </p>
+
+            <br><br><h2 id="12" class="main">Lose Control</h2><br>
+            <audio id="loseMp3" src="LoseControl.mp3" controls></audio>
+            <p id="p12">You don't remember my name<br>
+                I don't really care<br><br>
+                Can we play the game your way?<br>
+                Can I really lose control?<br>
+                Just once in my life<br>
+                I think it'd be nice<br>
+                Just to lose control, just once<br>
+                With all the pretty flowers in the dust<br><br>
+                Mary had a lamb<br><br>
+                His eyes black as coals<br>
+                If we play very quiet, my lamb<br>
+                Mary never has to know<br><br>
+                Just once in my life<br>
+                I think it'd be nice<br>
+                Just to lose control, just once<br><br>
+                Oh-oh-oh-oh, oh-oh-oh<br>
+                If I cut you down to a thing I can use<br>
+                I fear there'll be nothing good left of you<br>
+                Oh, oh, oh-oh! oh-oh, oh!<br>
+                Oh, oh, oh-oh! oh-oh, oh!<br>
+                Oh, oh, oh-oh! oh-oh, oh!<br>
+                Oh, oh, oh-oh! oh-oh, oh!<br><br>
+                Just to lose control, just once<br>
+            </p>
             
             <br><br><h2 id="8" class="main">The Only One</h2><br>
-            <audio src="TheOnlyOne.mp3" controls></audio>
+            <audio id="onlyMp3" src="TheOnlyOne.mp3" controls></audio>
             <p id="p8">(All the tuna fish are singing in a tuna afternoon)<br><br>
                 You know you're not the only one<br><br>
                 When they all come crashing down, midflight<br>
@@ -351,8 +431,45 @@
                 Heaven shine a light down on me<br>
             </p>
 
+            <br><br><h2 id="13" class="main">Your Star</h2><br>
+            <audio id="yourMp3" src="YourStar.mp3" controls></audio>
+            <p id="p13">I can't see your star<br>
+                I can't see your star<br>
+                Though I patiently waited bedside for the death of today<br>
+                I can't see your star<br>
+                And the mechanical lights of Lisbon frightened it away<br><br>
+                And I'm alone now<br>
+                Me and all I stood for<br>
+                We're wandering now<br>
+                All in parts, and pieces swim lonely<br>
+                Find your own way out<br><br>
+                I can't see your star<br>
+                I can't see your star<br>
+                How can the darkness feel so wrong?<br><br>
+                And I'm alone now<br>
+                Me and all I stood for<br>
+                We're wandering now<br>
+                All in parts and pieces swim lonely<br>
+                Find your own way out<br><br>
+                So far away<br>
+                It's growing colder without your love<br>
+                Why can't you feel me calling your name?<br>
+                Can't break the silence<br>
+                It's breaking me<br>
+                All my fears turn to rage<br><br>
+                And I'm alone now<br>
+                Me and all I stood for<br>
+                We're wandering now<br>
+                All in parts and pieces swim lonely<br>
+                Find your own way out now, hey<br><br>
+                Nothing worth fighting for<br>
+                We're wandering now<br>
+                All in parts and pieces swim lonely<br>
+                Find your own way out<br>
+            </p>
+
             <br><br><h2 id="9" class="main">All That I'm Living For</h2><br>
-            <audio src="TheOnlyOne.mp3" controls></audio>
+            <audio id="livingMp3" src="LivingFor.mp3" controls></audio>
             <p id="p9">All that I'm living for<br>
                 All that I'm dying for<br>
                 All that I can't ignore alone at night<br><br>
@@ -401,7 +518,7 @@
             </p>
 
             <br><br><h2 id="10" class="main">Good Enough</h2><br>
-            <audio src="GoodEnough.mp3" controls></audio>
+            <audio id="goodMp3" src="GoodEnough.mp3" controls></audio>
             <p id="p10">Under your spell again<br>
                 I can't say no to you<br>
                 Crave my heart and it's bleeding in your hand<br>
@@ -552,8 +669,129 @@
                         document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2469519.jpg&f=1&nofb=1&ipt=48364c9a9c21201ced9aed48b0d3bcd00b27322792c5201d4a9ab7e9f8e5bc00&ipo=images')";
                         break;
 
+                    case "lacrymosa":
+                        document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F89%2F21%2FAdW9tv.jpg&f=1&nofb=1&ipt=6e0c70e0c0ea84ab9ce857c8b4797dd520c842452a1fca5373827febb6d10fb6&ipo=images')"
+                        document.body.style.color = "white";
+                        document.getElementById("sidebar").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.wallhere.com%2Fphoto%2Fform-shape-blue-black-1101692.jpg&f=1&nofb=1&ipt=8b61f99addcf13b65c2b17692203690aab65cd4c4f4a59c8b51d2a6e3cb26ed1&ipo=images')";
+                        document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.wallhere.com%2Fphoto%2Fform-shape-blue-black-1101692.jpg&f=1&nofb=1&ipt=8b61f99addcf13b65c2b17692203690aab65cd4c4f4a59c8b51d2a6e3cb26ed1&ipo=images')";
+                        break;
+
+                    case "lose":
+                        document.body.style.backgroundImage = "url('https://cdn.wallpapersafari.com/18/67/SK5oAl.jpg')"
+                        document.body.style.color = "white";
+                        document.getElementById("sidebar").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffiles.123freevectors.com%2Fwp-content%2Foriginal%2F110440-black-and-blue-blurred-background-vector.jpg&f=1&nofb=1&ipt=764c2cf59679609d83dcd22edc556325b1c07b24fcd4fd9c90744072c1eeb16e&ipo=images')";
+                        document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffiles.123freevectors.com%2Fwp-content%2Foriginal%2F110440-black-and-blue-blurred-background-vector.jpg&f=1&nofb=1&ipt=764c2cf59679609d83dcd22edc556325b1c07b24fcd4fd9c90744072c1eeb16e&ipo=images')";
+                        break;
+
+                    case "your":
+                        document.body.style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F04%2FStars-wallpaper-HD-desktop.jpg&f=1&nofb=1&ipt=cca5cdc501db7c36ea8f7983077c59fa6fc9bdd7bad154ccd5039327da95969f&ipo=images')"
+                        document.body.style.color = "white";
+                        document.getElementById("sidebar").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FGQn5K5c.jpg&f=1&nofb=1&ipt=78053df857556dbea0dec639da7501ee0184efdb52436fe97dadfa9404990aef&ipo=images')";
+                        document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FGQn5K5c.jpg&f=1&nofb=1&ipt=78053df857556dbea0dec639da7501ee0184efdb52436fe97dadfa9404990aef&ipo=images')";
+                        break;
+
+                    
                     default:
                         break;
+                }
+            }
+
+            function play(mp3) {
+                switch (mp3) {
+                    case "sweet":
+                        let thing1 = document.getElementById("sweetMp3");
+                        thing1.currentTime = 0;
+                        thing1.volume = 0.2;
+                        thing1.play();
+                        break;
+                        
+                    case "call":
+                        let thing2 = document.getElementById("callMp3");
+                        thing2.currentTime = 0;
+                        thing2.volume = 0.2;
+                        thing2.play();
+                        break;
+
+                    case "weight":
+                        let thing3 = document.getElementById("weightMp3");
+                        thing3.currentTime = 0;
+                        thing3.volume = 0.2;
+                        thing3.play();
+                        break;
+
+                    case "lithium":
+                        let thing4 = document.getElementById("lithiumMp3");
+                        thing4.currentTime = 0;
+                        thing4.volume = 0.2;
+                        thing4.play();
+                        break;
+
+                    case "cloud":
+                        let thing5 = document.getElementById("cloudMp3");
+                        thing5.currentTime = 0;
+                        thing5.volume = 0.2;
+                        thing5.play();
+                        break;
+
+                    case "snow":
+                        let thing6 = document.getElementById("snowMp3");
+                        thing6.currentTime = 0;
+                        thing6.volume = 0.2;
+                        thing6.play();
+                        break;
+
+                    case "like":
+                        let thing7 = document.getElementById("likeMp3");
+                        thing7.currentTime = 0;
+                        thing7.volume = 0.2;
+                        thing7.play();
+                        break;
+
+                    case "only":
+                        let thing8 = document.getElementById("onlyMp3");
+                        thing8.currentTime = 0;
+                        thing8.volume = 0.2;
+                        thing8.play();
+                        break;
+
+                    case "living":
+                        let thing9 = document.getElementById("livingMp3");
+                        thing9.currentTime = 0;
+                        thing9.volume = 0.2;
+                        thing9.play();
+                        break;
+
+                    case "good":
+                        let thing10 = document.getElementById("goodMp3");
+                        thing10.currentTime = 0;
+                        thing10.volume = 0.2;
+                        thing10.play();
+                        break;
+
+                    case "lacrymosa":
+                        let thing11 = document.getElementById("lacrymosaMp3");
+                        thing11.currentTime = 0;
+                        thing11.volume = 0.2;
+                        thing11.play();
+                        break;
+
+                    case "lose":
+                        let thing12 = document.getElementById("loseMp3");
+                        thing12.currentTime = 0;
+                        thing12.volume = 0.2;
+                        thing12.play();
+                        break;
+
+                    case "your":
+                        let thing13 = document.getElementById("yourMp3");
+                        thing13.currentTime = 0;
+                        thing13.volume = 0.2;
+                        thing13.play();
+                        break;
+
+                    default:
+                        break;
+
                 }
             }
         </script>

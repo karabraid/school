@@ -37,10 +37,12 @@ body.light {
     transform: translateX(-100%);
   }
   
-  h2.sidebar {
-    margin-top: 4em;
+  h3.sidebar {
+    margin-top: 1em;
     text-align: center;
     font-size: 1.5em;
+    font-family: "Bruno Ace SC", cursive;
+    text-align: center;
   }
   
   a.sidebar {
@@ -108,3 +110,9 @@ body.light {
     height: 30px;
   }
   
+
+  .karaoke {
+    margin-left: -2px;
+    margin-top: -1px;
+    font-family: "Bruno Ace SC", cursive;
+  }
