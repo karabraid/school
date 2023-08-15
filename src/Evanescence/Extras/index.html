@@ -17,21 +17,25 @@
             <a onclick="function thing() {
                 scrollWithOffset('1',80);
                 changebackground('last');
+                auto('last');
             }; thing();" class="sidebar">The Last Song I'm Wasting on You</a><br><br>
              
             <a onclick="function thing() {
                 scrollWithOffset('2',80);
                 changebackground('broken');
+                auto('broken');
             }; thing();" class="sidebar">My Heart is Broken</a><br><br>
             
             <a onclick="function thing() {
                 scrollWithOffset('3',80);
                 changebackground('together');
+                auto('together');
             }; thing();" class="sidebar">Together Again</a><br><br>
             
             <a onclick="function thing() {
                 scrollWithOffset('4',80);
                 changebackground('mind');
+                auto('mind');
             } thing();" class="sidebar">If You Don't Mind</a><br><br>
             
         </div>
@@ -45,7 +49,7 @@
         
         <div class="main" id="main">
             <br><h2 id="1" class="main">The Last Song I'm Wasting on You</h2><br>
-            <audio src="LastSong.mp3" controls></audio>
+            <audio id="lastMp3" src="LastSong.mp3" controls></audio>
             <p id="1p">Sparkling gray<br>
                 They're my own veins<br>
                 Any more than a whisper<br>
@@ -86,7 +90,7 @@
                 
             
             <br><br><h2 id="2" class="main">My Heart is Broken</h2><br>
-            <audio src="BrokenHeart.mp3" controls></audio>
+            <audio id="brokenMp3" src="BrokenHeart.mp3" controls></audio>
             <p id="p2">I will wander 'til the end of time, torn away from you<br><br>
                 I pulled away to face the pain<br>
                 I close my eyes and drift away<br>
@@ -123,7 +127,7 @@
             </p>
             
             <br><br><h2 id="3" class="main">Together Again</h2><br>
-            <audio src="TogetherAgain.mp3" controls></audio>
+            <audio id="togetherMp3" src="TogetherAgain.mp3" controls></audio>
             <p id="p2">Never thought that I'd be leaving you today<br>
                 So alone and wondering why I feel this way<br>
                 So wide the world<br>
@@ -143,7 +147,7 @@
             </p>
             
             <br><br><h2 id="4" class="main">If You Don't Mind</h2><br>
-            <audio src="IfYouDontMind.mp3" controls></audio>
+            <audio id="mindMp3" src="IfYouDontMind.mp3" controls></audio>
             <p id="p2">Where's the light?
                 Killed my day<br>
                 Lost in the dark of your ways<br>
@@ -245,6 +249,38 @@
                         document.getElementById("heading").style.backgroundImage = "url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F06%2FBlack-And-Red-Wallpaper-Free-Download-1.jpg&f=1&nofb=1&ipt=be0c5b2ea1e9b423c7f0d18a4e2d1c0bfaab7887dddeddcb4cabdfa60b4cf860&ipo=images')"
                         break;
 
+                    default:
+                        break;
+                }
+            }
+
+            function auto(mp3) {
+                
+                switch (mp3) {
+                    case "last":
+                        let x = document.getElementById('lastMp3');
+                        x.currentTime = 0;
+                        x.play();
+                        break;
+
+                    case "broken":
+                        let y = document.getElementById("brokenMp3")
+                        y.currentTime = 0;
+                        y.play();
+                        break;
+                        
+                    case "together":
+                        let z = document.getElementById("togetherMp3");
+                        z.currentTime = 0;
+                        z.play();
+                        break;
+
+                    case "mind":
+                        let a = document.getElementById("mindMp3");
+                        a.currentTime = 0;
+                        a.play();
+                        break;
+                    
                     default:
                         break;
                 }
