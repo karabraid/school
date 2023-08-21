@@ -6,6 +6,7 @@ div.sidebar {
   height: 100%;
   padding-top: 30px;
   background-color: #2ed9d7;
+  border-right: 10px groove #2ed9d7;
   z-index: 1;
   text-align: center;
 }
@@ -17,10 +18,7 @@ div.header {
   width: 80%;
   height: 15%;
   background-color: #7cf4fe;
-}
-
-div.footer {
-  
+  border-bottom: 10px groove #7cf4fe;
 }
 
 div.main {
@@ -31,19 +29,25 @@ div.main {
 }
 
 h2.decorative {
-  font-family: "Cinzel Decorative", cursive;
-  color: #ffffff;
+  font-family: Copperplate, cursive;
+  font-size: 2em;
+  color: #012c6d;
   text-align: center;
 }
 
 h1.decorative {
-  font-family: "Cinzel Decorative", cursive;
-  color: #4030ff;
+  font-family: "Copperplate", cursive;
+  color: #012c6d;
+  /* 4030ff */
   text-align: center;
+  font-size: 3em;
 }
 
 a {
   color: blue;
+  text-decoration: none;
+  font-family: Copperplate, serif;
+  font-size: 1.3em;
   transition: color 0.5s;
 }
 
@@ -56,5 +60,7 @@ h2 {
 }
 
 img {
-  height: 450px;
+  margin-top: -10%;
+  margin-left: -4%;
+  height: 600px;
 }
