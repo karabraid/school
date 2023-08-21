@@ -3,6 +3,21 @@ h1 {
   font-size: 2em;
 }
 
+h4,
+p.gothic {
+  text-align: center;
+  font-family: Copperplate, sans-serif;
+}
+
+.gothic {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+h4 {
+  font-size: 2em;
+}
+
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.2em;
@@ -27,6 +42,11 @@ p.moreReadable {
 
 .emphasized {
   font-style: italic;
+}
+
+.div1 {
+  border: 10px ridge #0d580c;
+  margin-right: 20%;
 }
 
 .evanescence {
