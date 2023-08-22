@@ -22,7 +22,7 @@ div.light {
 }
 
 div.sidebar {
-  color: white;
+  color: rgb(255, 255, 255);
   position: fixed;
   top: 9.5%;
   left: 0;
@@ -30,6 +30,7 @@ div.sidebar {
   height: 100%;
   text-align: center;
   transition: transform 1s;
+  border-right: 10px ridge rgb(4, 92, 172);
   background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-4MRm475WWwM%2FUEN_vpNdlvI%2FAAAAAAAAAuY%2FMBLR3uBnDSM%2Fs1600%2FBlue%252Bwallpapers%252B4.jpg&f=1&nofb=1&ipt=cc68d8e1e8839202822a09c2abd21a9498908901c40135fd36789521878d9ce0&ipo=images");
 }
 
@@ -65,7 +66,7 @@ div.heading {
   right: 0;
   left: 0;
   width: 100%;
-  border-bottom: 2px solid black;
+  border-bottom: 10px groove #045cac;
   background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-4MRm475WWwM%2FUEN_vpNdlvI%2FAAAAAAAAAuY%2FMBLR3uBnDSM%2Fs1600%2FBlue%252Bwallpapers%252B4.jpg&f=1&nofb=1&ipt=cc68d8e1e8839202822a09c2abd21a9498908901c40135fd36789521878d9ce0&ipo=images");
 }
 
