@@ -3,6 +3,10 @@ h1 {
   font-size: 2em;
 }
 
+#noreason {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
 h4,
 p.gothic {
   text-align: center;
