@@ -11,8 +11,23 @@ div.sidebar {
   text-align: center;
 }
 
+div.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 13%;
+  height: 9%;
+  background-color: #0fb6e5;
+  border-left: 10px ridge #59c9e8;
+  border-top: 10px ridge #59c9e8;
+  border-top-left-radius: 30px;
+  text-align: center;
+  align-items: center;
+}
+
 div.header {
   position: fixed;
+  display: inline;
   top: 0;
   right: 0;
   width: 80%;
@@ -44,7 +59,7 @@ h1.decorative {
 }
 
 a {
-  color: blue;
+  color: #7cf4fe;
   text-decoration: none;
   font-family: Copperplate, serif;
   font-size: 1.3em;
@@ -52,15 +67,34 @@ a {
 }
 
 a:hover {
-  color: #ff41fb;
+  color: #003488;
 }
 
 h2 {
   text-align: center;
 }
 
-img {
+img.logo {
   margin-top: -7.5%;
   margin-bottom: -5%;
   height: 575px;
+}
+
+img.footer {
+  padding-top: 3px;
+  padding-left: 3px;
+  height: 55px;
+}
+
+img.sidebar {
+  height: 220px;
+  margin-left: -50px;
+  margin-bottom: -235px;
+}
+
+img.header {
+  height: 100px;
+  position: absolute;
+  right: -5px;
+  top: -5px;
 }
