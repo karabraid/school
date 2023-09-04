@@ -1,0 +1,40 @@
+.hidden {
+  display: none;
+}
+
+.shown {
+  /* display: contents; */
+  background-color: black;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-align: justify;
+}
+
+div.heading {
+  text-align: center;
+}
+
+div.p {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+img {
+  position: absolute;
+  margin-left: -350px;
+  margin-top: -150px;
+  transform: rotate(-0.25turn);
+  height: 200px;
+}

@@ -98,3 +98,11 @@ img.header {
   right: -5px;
   top: -5px;
 }
+
+.p1 {
+  color: #49aeeb;
+}
+
+.p1:hover {
+  color: #49aeeb;
+}

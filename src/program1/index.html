@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>program1</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body id="body" class="hidden" onload="password();">
+        <br><bR>
+        <div class="heading">
+            <h1>Top Secret<h1>
+        </div><br>
+        
+        <img src="heading.png">
+        
+        <div class="p">
+            <p>These are the secret files of the Nessuno Project. These file are for authorised eyes only. 
+                Although, of course if you managed to get here you are probably authorised. If you are 
+                not, please leave this page immediately. Just a warning - we can find the IP address of 
+                anyone who manages to get past the password - so if you're not supposed to be here, 
+                watch out.
+            </p>
+            <br>
+            <h2>The Project</h2>
+            <p>The Nessuno Project was developed in 1940 during World War II as a spy agency for the Allied 
+                forces. Since then, it has become a top secret British special operations unit. The NP (as 
+                it is known now) often works in conjunction with MI5 and MI6.<br><br> Only select 
+                people even know about this agency - apart from the agents - including but not limited to 
+                the Prime Minister, the chief executives of MI5 and MI6 and the police commissioner. The 
+                general public have no knowledge of this agency, and for the most part, they have remained 
+                under the radar of enemy intelligence units.
+            <p>
+            <h2>The Agents</h2>
+            <p>The agents are a collection of the best and most ruthless agents in the country.</p>
+        </div>
+
+
+        <script>
+            
+            function password() {
+                let idList = [241007, 150610, 091013]
+                let passList = ["evanescence#12Callmewhenyouresober", "owlCity*theRealWorld789", "pinkBunny_isTheBest9"]
+                let userId = prompt("Please enter your ID number:")
+                let isMatching = false
+                let isMatching2 = false
+                let matching = idList.map((id) => {
+                    if (id === Number(userId)) {
+                        isMatching = true
+                    }
+                })
+                if (isMatching) {
+                    document.getElementById("body").className = "shown";
+                    let pass = prompt("Please enter your password:")
+                }
+                else {
+                    document.location.assign("https://g8j0mx-1234.preview.csb.app/index.html");
+                }
+            }
+        </script>
+
+    <body>
+<html>
