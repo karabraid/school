@@ -1,0 +1,53 @@
+h1,
+h2,
+h3,
+a,
+p {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+}
+
+body {
+  background-color: black;
+}
+
+div.sidebar {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  background-color: rgb(36, 36, 36);
+}
+
+.sidebar {
+  text-align: center;
+}
+
+p {
+  cursor: pointer;
+}
+
+div.main {
+  margin-left: 20%;
+  margin-right: 50%;
+}
+
+div.inform {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background-color: rgb(24, 24, 24);
+}
+
+p#changeable {
+  padding-left: 4em;
+  padding-top: 2em;
+  text-align: left;
+}

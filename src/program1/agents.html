@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>program2</title>
+        <link href="agents.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="sidebar">
+            <br>
+            <h3 class="sidebar">Page Contents</h3><br>
+            <p onclick="scrollWithOffset('direct', 25);" class="sidebar">Directors</p><br>
+            <p onclick="scrollWithOffset('intel', 25);" class="sidebar">Intelligence <br>Unit</p><br>
+            <p onclick="scrollWithOffset('ops', 25);" class="sidebar">Special <br>Operations</p><br>
+        </div>
+        
+        <div class="main">
+            <h2 id="direct">Directors</h2>
+            <p id="direct1" onclick="showInfo('direct1')">Grey Wolf</p>
+            <p id="direct2" onclick="showInfo('direct2')">Lady No One</p>
+            
+            <h2 id="intel">Itelligence Unit</h2>
+
+            
+            <h2 id="ops">Special Operations</h2>
+        </div>
+
+        <div class="inform">
+            <p id="changeable">Information should appear here.</p>
+        </div>
+
+        <script>
+            // Thanks Joshua!
+            function scrollWithOffset(id, headerOffset) { 
+                let el = document.getElementById(id)
+                let elementPosition = el.getBoundingClientRect().top;
+                let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+
+            
+            function showInfo(id) {
+                let agent = document.getElementById(id);
+                switch(agent) {
+        
+                    case "direct1":
+                        let content = "NO INFORMATION ON GREY WOLF";
+                        document.getElementById("changeable").innerHTML = "hello";
+                        break;
+                
+                    case "direct2":
+                        content = "NO INFORMATION ON LADY NO ONE";
+                        document.getElementById("changeable").innerHTML = content;
+                        break;
+
+                    default:
+                        break;
+                }
+                
+            }
+        </script>
+    </body>
+</html>
