@@ -17,15 +17,20 @@
             <h2 id="direct">Directors</h2>
             <p id="direct1" onclick="showInfo('direct1')">Grey Wolf</p>
             <p id="direct2" onclick="showInfo('direct2')">Lady No One</p>
+            <br><br>
             
             <h2 id="intel">Itelligence Unit</h2>
-
+            <p id="intel1" onclick="showInfo('intel1')">Beech</p>
+            <p id="intel2" onclick="showInfo('intel2')">Oak</p>
+            <p id="intel3" onclick="showInfo('intel3')">Hawthorn</p>
+            <p id="intel4" onclick="showInfo('intel4')">Willow</p>
+            <br><br>
             
             <h2 id="ops">Special Operations</h2>
         </div>
 
         <div class="inform">
-            <p id="changeable">Information should appear here.</p>
+            <p id="changeable"></p>
         </div>
 
         <script>
@@ -42,23 +47,34 @@
 
             
             function showInfo(id) {
-                let agent = document.getElementById(id);
-                switch(agent) {
-        
-                    case "direct1":
-                        let content = "NO INFORMATION ON GREY WOLF";
-                        document.getElementById("changeable").innerHTML = "hello";
-                        break;
-                
-                    case "direct2":
-                        content = "NO INFORMATION ON LADY NO ONE";
-                        document.getElementById("changeable").innerHTML = content;
-                        break;
-
-                    default:
-                        break;
-                }
-                
+                    switch(id) {
+                        case "direct1":
+                            let content = "NO INFORMATION ON GREY WOLF";
+                            document.getElementById("changeable").innerHTML = content;
+                            break;
+                        case "direct2":
+                            content = "NO INFORMATION ON LADY NO ONE";
+                            document.getElementById("changeable").innerHTML = content;
+                            break;
+                        case "intel1":
+                            content = "WILLIAM MARTIN<br><br>Position: Chief of Intelligence Unit<br><br>Codename: Beech<br>";
+                            document.getElementById("changeable").innerHTML = content;
+                            break;
+                        case "intel2":
+                            content = "ANDREW KENNEDY<br><br>Position: intelligence agent<br><br>Status: active<br><br>Code name: Oak";
+                            document.getElementById("changeable").innerHTML = content;
+                            break;
+                        case "intel3":
+                            content = "TERRY DAWSON<br><br>Position: intelligence agent<br><br>Status: neutral<br><br>Code name: Hawthorn";
+                            document.getElementById("changeable").innerHTML = content;
+                            break;
+                        case "intel4":
+                            content = "LANA MASON<BR><BR>Position: technological support<br><br>Status: active<br><br>Code name: Willow";
+                            document.getElementById("changeable").innerHTML = content;
+                            break;
+                        default:
+                            break;
+                    }
             }
         </script>
     </body>
