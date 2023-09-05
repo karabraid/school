@@ -93,3 +93,12 @@ h3 {
 .extreme {
   font-style: italic;
 }
+
+#image1 {
+  position: absolute;
+  margin-left: 500px;
+  margin-top: -130px;
+  height: 350px;
+  opacity: 10%;
+  color: #0d580c;
+}
