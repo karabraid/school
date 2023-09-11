@@ -4,7 +4,7 @@
         <title>program1</title>
         <link rel="stylesheet" href="index.css">
     </head>
-    <body id="body" class="hidden" onload="password();">
+    <body id="body" class="shown">
         <br><bR>
         <div class="heading">
             <h1>Top Secret<h1>
@@ -38,20 +38,31 @@
         <script>
             
             function password() {
-                let idList = [241007, 150610, 091013]
-                let passList = ["evanescence#12Callmewhenyouresober", "owlCity*theRealWorld789", "pinkBunny_isTheBest9"]
+                let idList = [1, 241007, 150610, 091013]
+                let passList = ["123", "evanescence#12Callmewhenyouresober", "owlCity*theRealWorld789", "pinkBunny_isTheBest9"]
                 let userId = prompt("Please enter your ID number:")
                 let isMatching = false
-                let isMatching2 = false
+                let isRight = false
                 let matching = idList.map((id) => {
                     if (id === Number(userId)) {
                         isMatching = true
                     }
                 })
                 if (isMatching) {
-                    document.getElementById("body").className = "shown";
-                    let pass = prompt("Please enter your password:")
+                    let userPass = prompt("Please enter your password:")
+                    let right = passList.map((pass) => {
+                        if (pass === str(userPass)) {
+                         isRight = true
+                        }
+                    })
+                    if (isRight) {
+                            document.getElementById("body").className = "shown";
+                    }
+                    else {
+                        document.location.assign("https://g8j0mx-1234.preview.csb.app/index.html");
+                    }
                 }
+                
                 else {
                     document.location.assign("https://g8j0mx-1234.preview.csb.app/index.html");
                 }

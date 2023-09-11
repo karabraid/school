@@ -34,14 +34,14 @@ p {
 
 div.main {
   margin-left: 20%;
-  margin-right: 50%;
+  margin-right: 45%;
 }
 
 div.inform {
   position: fixed;
   top: 0;
   right: 0;
-  width: 45%;
+  width: 40%;
   height: 100%;
   background-color: rgb(24, 24, 24);
 }
@@ -49,5 +49,11 @@ div.inform {
 p#changeable {
   padding-left: 4em;
   padding-top: 2em;
+  text-align: left;
+}
+
+h2#infoheading {
+  padding-left: 2em;
+  padding-top: 1em;
   text-align: left;
 }
