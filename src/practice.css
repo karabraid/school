@@ -51,6 +51,7 @@ p.moreReadable {
 .div1 {
   border: 10px ridge #0d580c;
   margin-right: 20%;
+  padding-right: 50px;
 }
 
 .evanescence {
@@ -99,6 +100,17 @@ h3 {
   margin-left: 500px;
   margin-top: -130px;
   height: 350px;
-  opacity: 10%;
+  opacity: 5%;
   color: #0d580c;
+}
+
+.img1 {
+  display: block;
+  margin-left: 15%;
+  height: 300px;
+}
+
+.img2 {
+  margin-left: 11%;
+  height: 350px;
 }
