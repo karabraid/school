@@ -25,6 +25,10 @@ div.footer {
   align-items: center;
 }
 
+div.footer:active {
+  background-color: #76defe;
+}
+
 div.header {
   position: fixed;
   display: inline;
@@ -87,9 +91,10 @@ img.footer {
 }
 
 img.sidebar {
+  position: absolute;
   height: 220px;
-  margin-left: -50px;
-  margin-bottom: -235px;
+  margin-left: -170px;
+  margin-bottom: 70px;
 }
 
 img.header {
