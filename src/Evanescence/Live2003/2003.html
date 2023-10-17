@@ -2,8 +2,62 @@
 <html>
     <head>
         <title>Evanescence 2003 Live</title>
+        <link rel="stylesheet" href="2003.css">
     </head>
     <body>
-        hello
+        <h1>Evanescence Live 2003<h1>
+        <h2>Contents<h2>
+        <h3 onclick="scrollWithOffset('playlist', 60)">Playlist</h3>
+        <h3 onclick="scrollWithOffset('music', 60)">Music</h3>
+        <h3 onclick="scrollWithOffset('video', 60)">Videos</h3><br><br>
+
+        <div id="playlist" class="play">
+          <blockquote><h3>Live 2003 Playlist:<h3></blockquote>
+          <ol>
+            <ul>Haunted</ul>
+            <ul>Going Under</ul>
+            <ul>Taking Over Me</ul>
+            <ul>Everybody's Fool</ul>
+            <ul>My Last Breath</ul>
+            <ul>Farther Away</ul>
+            <ul>Even in Death</ul>
+            <ul>Zero (Smashin Pumpkins cover)</ul>
+            <ul>Breathe No More</ul>
+            <ul>My Immortal</ul>
+            <ul>Bring Me To Life</ul>
+            <ul>Tourniquet</ul>
+            <ul>Imaginary</ul>
+            <ul>Whisper</ul>
+          </ol>
+        </div><br><br><br><br><br>
+
+        <div id="music" class="music">
+            <audio src="Media/Audio/Haunted.mp3" controls></audio>
+            <audio src="Media/Audio/GoingUnder.mp3" controls></audio>
+            <audio src="Media/Audio/TakingOverMe.mp3" controls></audio>
+            <audio src="Media/Audio/EverybodysFool.mp3" controls></audio>
+            <audio src="Media/Audio/MyLastBreath.mp3" controls></audio>
+            <audio src="Media/Audio/FartherAway.mp3" controls></audio>
+            <audio src="Media/Audio/EvenInDeath.mp3" controls></audio>
+            <audio src="Media/Audio/Zero.mp3" control></audio>
+            <audio src="Media/Audio/BreatheNoMore.mp3" controls></audio>
+            <audio src="Media/Audio/MyImmortal.mp3" controls></audio>
+            <audio src="Media/Audio/BringMeToLife.mp3" controls></audio>
+            <audio src="Media/Audio/Imaginary.mp3" controls></audio>
+            <audio src="Media/Audio/Whisper.mp3" controls></audio>
+        </div>
+            
+
+        <script>
+            function scrollWithOffset(id, headerOffset) { 
+                    let el = document.getElementById(id)
+                    let elementPosition = el.getBoundingClientRect().top;
+                    let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+        </script>
     </body>
 </html>

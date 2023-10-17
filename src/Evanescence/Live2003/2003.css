@@ -1,3 +1,31 @@
 body {
-  background-image: url("Media/wallpaper.png");
+  background-image: url("Media/Images/wallpaper.png");
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+  font-family: Copperplate, monospace;
+}
+
+audio {
+  height: 20px;
+  width: 120px;
+}
+
+div.play {
+  width: 300px;
+  color: white;
+  font-family: Copperplate, monospace;
+  border: 10px ridge #00507a;
+  padding: 1.5em;
+  background-image: url("Media/Images/wallpaper1.png");
+}
+
+div.music {
+  border: 10px ridge #00507a;
+  padding: 1.5em;
+  background-image: url("Media/Images/wallpaper2.png");
+  background-size: 100%;
 }
