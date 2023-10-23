@@ -7,7 +7,7 @@ a {
 }
 
 iframe {
-  margin-left: 10%;  
+  margin-left: 10%;
 }
 
 h1,
@@ -40,7 +40,7 @@ div.music {
   font-size: 1.5em;
   padding: 1em;
   background-image: url("Media/Images/wallpaper2.png");
-  background-size: 100%;
+  background-size: 110%;
 }
 
 table.music {
@@ -56,6 +56,29 @@ div.video {
   color: white;
   font-family: Copperplate, monospace;
   font-size: 1.5em;
+}
+
+div.video1 {
+  position: absolute;
+  margin-left: 51%;
+  margin-top: -980px;
+  width: 45%;
+  background-image: url("Media/Images/wallpaper4.png");
+  background-size: 100%;
+  border: 10px ridge #00507a;
+  color: white;
+  font-family: Copperplate, monospace;
+  font-size: 1.5em;
+}
+
+div.up {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: blue;
 }
 
 p.v1 {
