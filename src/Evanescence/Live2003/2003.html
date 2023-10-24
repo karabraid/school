@@ -115,7 +115,7 @@
         </div>
 
         <div class="up">
-            <a href="#top"><img src=""></a>
+            <a href="#top"><img id="up" class="imgUp" src="Media/Images/evanescenceLogo15.png" onclick="addClass();"></a>
         </div>
             
 
@@ -129,6 +129,9 @@
                         behavior: "smooth"
                     });
                 }
+            function addClass() {
+                getElementById("up").className = " turn";
+            }
         </script>
     </body>
 </html>

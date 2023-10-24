@@ -73,13 +73,27 @@ div.video1 {
 
 div.up {
   position: fixed;
+  /* text-align: center; */
   right: 0;
   bottom: 0;
   width: 40px;
   height: 40px;
-  background-color: white;
-  color: blue;
+  background-color: #0b5493;
+  border-top: 10px ridge #0b5493;
+  border-bottom: 10px groove #0b5493;
+  border-top-left-radius: 20%;
 }
+
+img.imgUp {
+  display: block;
+  width: 30px;
+  margin: 5px auto 0 auto;
+}
+
+/* .turn {
+  transform: rotateX(360deg);
+  transition: tranform 5s;
+} */
 
 p.v1 {
   font-size: 0.5em;
