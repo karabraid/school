@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Charm&family=Norican&family=Shadows+Into+Light&family=Vina+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>This is my practice program.</h1>
+        <h1 id="top">This is my practice program.</h1>
         <p>I am doing this program for the book 'A Smarter Way to Learn HTML and CSS.'</p>
         <p class="important">Warning: We have no slow lorises here.</p>
         
@@ -30,7 +30,7 @@
                 "My Immortal", Fallen sold more than four million copies in the US by January 2004, garnering the
                 band two Grammy Awards out of six nominations. The band released their first live album and concert
                 DVD, Anywhere but Home, in 2004, which sold over one million copies worldwide.
-                <br>&nbsp;&nbsp;Click <a href="https://www.evanescence.com">here</a> to go to Evanescence's official website.
+                <br>&nbsp;&nbsp;Click <a href="https://www.evanescence.com" target="_blank">here</a> to go to Evanescence's official website.
             </p><br><br>
         </div>
         
@@ -77,10 +77,23 @@
              with a more reflective outlook. Rather than "wallowing" in "the hard stuff", the 
              record is characterized by her newfound resolution and is thematically in search 
              of answers and happiness.
-        </p>
-        
+        </p><br/>
+
+        <hr width="70%"/><br/><br/><br/>
+
+        <p id="openWindow">Click here for programming information.</p>
+
+        <a class="up" href="#top"><img class="up" src="arrowUp.png"></a>
         <br/><br/><br/><br/><br/>
         <iframe src="https://www.ihearthorses.com/" width="700px" height="450px"></iframe>
+
+        <script>
+            document.getElementById('openWindow').onclick = openWindow;
+            
+            function openWindow() {
+                let w = window.open("https://www.asmarterwaytolearn.com/", "", "width=370,height=400,left=300,top=300");
+            }
+        </script>
         
     </body>
 </html>

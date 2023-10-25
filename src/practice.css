@@ -67,6 +67,16 @@ p.moreReadable {
   color: #0d580c;
 }
 
+a.up {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+img.up {
+  height: 40px;
+}
+
 blockquote {
   font-family: "Norican", cursive;
   font-size: 2em;
