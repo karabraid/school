@@ -12,6 +12,24 @@ hr {
   height: 5px;
 }
 
+a {
+  color: goldenrod;
+}
+
+a:hover {
+  color: lightsalmon;
+  text-decoration: none;
+}
+
+a:active {
+  color: salmon;
+  text-decoration: none;
+}
+
+a:visited {
+  color: deeppink;
+}
+
 #noreason {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
@@ -49,6 +67,10 @@ p.moreReadable {
   margin-left: 6em;
 }
 
+div.gallery {
+  text-align: justify;
+}
+
 .typewriter {
   font-family: "Courier New", Courier, monospace;
 }
@@ -75,6 +97,11 @@ a.up {
 
 img.up {
   height: 40px;
+}
+
+img.gallery {
+  display: inline;
+  height: 150px;
 }
 
 blockquote {
