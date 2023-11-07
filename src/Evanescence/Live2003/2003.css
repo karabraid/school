@@ -19,6 +19,11 @@ h3 {
   font-family: Copperplate, monospace;
 }
 
+p {
+  color: white;
+  font-family: copperplate, monospace;
+}
+
 audio {
   height: 20px;
   width: 200px;
@@ -43,6 +48,12 @@ div.music {
   padding: 1em;
   background-image: url("Media/Images/wallpaper2.png");
   background-size: 110%;
+}
+
+div.talk {
+  position: absolute;
+  left: 5%;
+  width: 40%;
 }
 
 table.music {
