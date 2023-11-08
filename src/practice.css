@@ -40,6 +40,30 @@ p.gothic {
   font-family: Copperplate, sans-serif;
 }
 
+div.list {
+  color: white;
+  background-color: black;
+  border-left: 10px groove white;
+  border-bottom: 10px ridge white;
+  border-right: 10px ridge white;
+  border-top: 10px groove white;
+  padding: 1.5em;
+  width: 15%;
+}
+
+h2.list {
+  font-family: "Norican", cursive;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
+
+li {
+  margin: 0.75em;
+  font-family: "Norican", cursive;
+}
+
 .gothic {
   margin-left: 25%;
   margin-right: 25%;
