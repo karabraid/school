@@ -52,8 +52,13 @@ div.music {
 
 div.talk {
   position: absolute;
-  left: 5%;
+  left: 55%;
   width: 40%;
+  background-image: url("Media/Images/wallpaper1.png");
+  background-size: 100%;
+  border: 10px ridge #00507a;
+  color: white;
+  padding: 1em;
 }
 
 table.music {
