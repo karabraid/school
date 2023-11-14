@@ -64,6 +64,30 @@ li {
   font-family: "Norican", cursive;
 }
 
+div.lyrics {
+  text-align: left;
+  width: 30%;
+  padding: 2em;
+  color: white;
+  font-size: 0.98em;
+  font-family: "Appel Chancery", cursive;
+  background-color: #53585b;
+  border: 10px ridge #c4c4c4;
+}
+
+div.lyrics p {
+  font-size: 0.9em;
+  font-family: "Appel Chancery", cursive;
+}
+
+div.lyrics h3 {
+  text-align: left;
+}
+
+div.lyrics audio {
+  height: 1.5em;
+}
+
 .gothic {
   margin-left: 25%;
   margin-right: 25%;
@@ -137,7 +161,7 @@ blockquote {
   font-variant: small-caps;
 }
 
-h3 {
+.bord {
   text-align: center;
   margin-left: 20em;
   margin-right: 20em;
