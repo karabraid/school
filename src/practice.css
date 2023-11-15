@@ -66,18 +66,29 @@ li {
 
 div.lyrics {
   text-align: left;
-  width: 30%;
+  width: 25%;
   padding: 2em;
   color: white;
   font-size: 0.98em;
   font-family: "Appel Chancery", cursive;
-  background-color: #53585b;
-  border: 10px ridge #c4c4c4;
 }
 
 div.lyrics p {
   font-size: 0.9em;
   font-family: "Appel Chancery", cursive;
+}
+
+div.never {
+  position: absolute;
+  background-color: #53585b;
+  border: 10px ridge #c4c4c4;
+}
+
+div.swimming {
+  position: absolute;
+  margin-left: 35%;
+  background-color: lightseagreen;
+  border: 10px ridge #b8fbf7;
 }
 
 div.lyrics h3 {
