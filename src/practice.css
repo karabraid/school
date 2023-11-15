@@ -154,6 +154,10 @@ img.gallery {
   height: 150px;
 }
 
+img.gallery:hover {
+  cursor: zoom-in;
+}
+
 blockquote {
   font-family: "Norican", cursive;
   font-size: 2em;
