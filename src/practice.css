@@ -234,3 +234,26 @@ blockquote {
 .spooky {
   font-family: copperplate, monospace;
 }
+
+iframe {
+  width: 400px;
+  height: 200px;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  font-family: copperplate, monospace;
+  padding: 1em;
+}
+
+th {
+  font-family: "Apple Chancery", cursive;
+  font-size: 1.1em;
+  padding: 1em;
+}
