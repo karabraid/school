@@ -27,7 +27,7 @@ a:active {
 }
 
 a:visited {
-  color: deeppink;
+  color: lightpink;
 }
 
 #noreason {
@@ -256,4 +256,12 @@ th {
   font-family: "Apple Chancery", cursive;
   font-size: 1.1em;
   padding: 1em;
+}
+
+th.topSide {
+  border-bottom: 3px solid black;
+}
+
+th.side {
+  border-right: 3px solid black;
 }

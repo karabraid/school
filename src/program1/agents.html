@@ -8,25 +8,14 @@
         <div class="sidebar">
             <br>
             <h3 class="sidebar">Page Contents</h3><br>
-            <p onclick="scrollWithOffset('direct', 25);" class="sidebar">Directors</p><br>
-            <p onclick="scrollWithOffset('intel', 25);" class="sidebar">Intelligence <br>Unit</p><br>
-            <p onclick="scrollWithOffset('ops', 25);" class="sidebar">Special <br>Operations</p><br>
+            <p id="direct" onclick="showInfo('direct')" class="sidebar">Directors</p><br>
+            <!-- <p onclick="scrollWithOffset('intel', 25);" class="sidebar">Intelligence <br>Unit</p><br> -->
+            <p id="intel" onclick="showInfo('intel')" class="sidebar">Intelligence <br>Unit</p></br>
+            <p id="ops" onclick="showInfo('ops')" class="sidebar">Special <br>Operations</p><br>
         </div>
         
         <div class="main">
-            <h2 id="direct">Directors</h2>
-            <p id="direct1" onclick="showInfo('direct1')">Grey Wolf</p>
-            <p id="direct2" onclick="showInfo('direct2')">Lady No One</p>
-            <br><br>
-            
-            <h2 id="intel">Itelligence Unit</h2>
-            <p id="intel1" onclick="showInfo('intel1')">Beech</p>
-            <p id="intel2" onclick="showInfo('intel2')">Oak</p>
-            <p id="intel3" onclick="showInfo('intel3')">Hawthorn</p>
-            <p id="intel4" onclick="showInfo('intel4')">Willow</p>
-            <br><br>
-            
-            <h2 id="ops">Special Operations</h2>
+            <h2>Info</h2>
         </div>
 
         <div class="inform">
@@ -48,33 +37,48 @@
 
             
             function showInfo(id) {
-                    switch(id) {
-                        case "direct1":
-                            let content = "NO INFORMATION ON GREY WOLF";
-                            document.getElementById("changeable").innerHTML = content;
-                            break;
-                        case "direct2":
-                            content = "NO INFORMATION ON LADY NO ONE";
-                            document.getElementById("changeable").innerHTML = content;
-                            break;
-                        case "intel1":
-                            content = "WILLIAM MARTIN<br><br>Position: Chief of Intelligence Unit<br><br>Codename: Beech<br>";
-                            document.getElementById("changeable").innerHTML = content;
-                            break;
-                        case "intel2":
-                            content = "ANDREW KENNEDY<br><br>Position: intelligence agent<br><br>Status: active<br><br>Code name: Oak";
-                            document.getElementById("changeable").innerHTML = content;
-                            break;
-                        case "intel3":
-                            content = "TERRY DAWSON<br><br>Position: intelligence agent<br><br>Status: neutral<br><br>Code name: Hawthorn";
-                            document.getElementById("changeable").innerHTML = content;
-                            break;
-                        case "intel4":
-                            content = "LANA MASON<BR><BR>Position: technological support<br><br>Status: active<br><br>Code name: Willow";
-                            document.getElementById("changeable").innerHTML = content;
-                            break;
-                        default:
-                            break;
+
+                switch(id) {
+                    case "direct":
+                        let content = "<h2 id="direct">Directors</h2><p id="direct1" onclick="showInfo('direct1')">Grey Wolf</p><p id="direct2" onclick="showInfo('direct2')">Lady No One</p><br><br>";
+                        document.getElementById("main").innerHTML = content;
+                        break;
+
+                    case "intel":
+                        let content = "<h2 id="intel">Itelligence Unit</h2><p id="intel1" onclick="showInfo('intel1')">Beech</p><p id="intel2" onclick="showInfo('intel2')">Oak</p><p id="intel3" onclick="showInfo('intel3')">Hawthorn</p><p id="intel4" onclick="showInfo('intel4')">Willow</p><br><br>"
+                        document.getElementById("main").innerHTML = content;
+                        break;
+
+                    case "ops":
+                        let content = "<h2 id="ops">Special Operations</h2>";
+                        document.getElementById("main").innerHTML = content;
+
+                    case "direct1":
+                        let content = "NO INFORMATION ON GREY WOLF";
+                        document.getElementById("changeable").innerHTML = content;
+                        break;
+                    case "direct2":
+                        content = "NO INFORMATION ON LADY NO ONE";
+                        document.getElementById("changeable").innerHTML = content;
+                        break;
+                    case "intel1":
+                        content = "WILLIAM MARTIN<br><br>Position: Chief of Intelligence Unit<br><br>Codename: Beech<br>";
+                        document.getElementById("changeable").innerHTML = content;
+                        break;
+                    case "intel2":
+                        content = "ANDREW KENNEDY<br><br>Position: intelligence agent<br><br>Status: active<br><br>Code name: Oak";
+                        document.getElementById("changeable").innerHTML = content;
+                        break;
+                    case "intel3":
+                        content = "TERRY DAWSON<br><br>Position: intelligence agent<br><br>Status: neutral<br><br>Code name: Hawthorn";
+                        document.getElementById("changeable").innerHTML = content;
+                        break;
+                    case "intel4":
+                        content = "LANA MASON<BR><BR>Position: technological support<br><br>Status: active<br><br>Code name: Willow";
+                        document.getElementById("changeable").innerHTML = content;
+                        break;
+                    default:
+                        break;
                     }
             }
         </script>
