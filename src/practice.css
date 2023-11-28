@@ -1,3 +1,53 @@
+.table1 {
+  position: absolute;
+  margin-top: 100%;
+  border-collapse: collapse;
+  width: 75%;
+}
+
+.table1 th,
+.table1 td {
+  padding: 0.5em;
+  width: 20%;
+}
+
+td.right {
+  text-align: right;
+}
+
+tr.t {
+  background-color: #caf4fe;
+}
+
+tr.t1 {
+  background-color: #bbf1fe;
+}
+
+tr.t2 {
+  background-color: #b2f0ff;
+}
+
+tr.t3 {
+  background-color: #a6ecfe;
+}
+
+tr.t4 {
+  background-color: #9fecff;
+}
+
+tr.t5 {
+  background-color: #91e9ff;
+}
+
+tr.t6 {
+  background-color: #86e8ff;
+  /* background-color: #7fe3fb; */
+}
+
+tr.t7 {
+  background-color: #7fe3fb;
+}
+
 h1 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 2em;
@@ -247,12 +297,12 @@ td {
   border-collapse: collapse;
 }
 
-td {
+table.amy td {
   font-family: copperplate, monospace;
   padding: 1em;
 }
 
-th {
+table.amy th {
   font-family: "Apple Chancery", cursive;
   font-size: 1.1em;
   padding: 1em;
