@@ -74,6 +74,11 @@ a:hover {
   color: #003488;
 }
 
+a.contact {
+  color: #ffffff;
+  font-family: "Apple Chancery", cursive;
+}
+
 h2 {
   text-align: center;
 }
