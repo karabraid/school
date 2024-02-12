@@ -2,22 +2,26 @@ body {
   background-color: #bce075;
 }
 
+form {
+  margin: 0 auto 0 auto;
+}
+
 .f1 {
   padding: 2em;
   width: 50%;
-  border-radius: 20px;
+  border-radius: 1.5em;
 }
 
 .f2 {
   padding: 1em;
   width: 75%;
-  border-radius: 10px;
+  border-radius: 0.75em;
 }
 
 .f3 {
   padding: 1em;
   width: 95%;
-  border-radius: 10px;
+  border-radius: 0.75em;
 }
 
 .f1,
@@ -31,7 +35,7 @@ legend {
   color: #e33753;
   border: 2px solid #e33753;
   background-color: #60dfca;
-  border-radius: 10px;
+  border-radius: 0.75em;
   padding: 0.3em;
 }
 
@@ -39,5 +43,5 @@ legend {
   border: 2px solid #e33753;
   background-color: #75e0ce;
   color: #e33753;
-  border-radius: 5px;
+  border-radius: 0.5em;
 }
