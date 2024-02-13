@@ -2,8 +2,18 @@ body {
   background-color: #bce075;
 }
 
+input[type="text"],
+[type="email"],
+textarea {
+  background-color: #b3fbef;
+  border: 2px solid #e33753;
+  border-radius: 0.5em;
+}
+
 form {
   margin: 0 auto 0 auto;
+  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 0.9em;
 }
 
 .f1 {
@@ -34,14 +44,23 @@ form {
 legend {
   color: #e33753;
   border: 2px solid #e33753;
-  background-color: #60dfca;
+  background-color: #91e3d6;
   border-radius: 0.75em;
   padding: 0.3em;
+  font-weight: 600;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.2em;
 }
 
-.submit1 {
+input[type="submit"] {
   border: 2px solid #e33753;
-  background-color: #75e0ce;
+  background-color: #a6eee2;
   color: #e33753;
   border-radius: 0.5em;
+  font-size: 1em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+::placeholder {
+  color: #e3919e;
 }
