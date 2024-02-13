@@ -1,3 +1,7 @@
+body {
+  background-color: #003488;
+}
+
 div.sidebar {
   position: fixed;
   top: 0;
@@ -41,8 +45,6 @@ div.header {
 }
 
 div.main {
-  margin-top: 15%;
-  margin-left: 20%;
   text-align: center;
   align-items: center;
 }
@@ -84,9 +86,9 @@ h2 {
 }
 
 img.logo {
-  margin-top: -7.5%;
-  margin-bottom: -5%;
-  height: 575px;
+  position: absolute;
+  margin-top: 17%;
+  margin-left: -13%;
 }
 
 img.footer {
