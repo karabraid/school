@@ -38,6 +38,10 @@ div#content {
   background-color: #accdbe;
   padding: 1em;
   z-index: 0;
+  background-image: url("media/DesktopPegasus.png");
+  background-repeat: no-repeat;
+  background-position: top 10em right;
+  background-attachment: fixed;
 }
 
 div#sidebar {
@@ -50,6 +54,14 @@ div#sidebar {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #cdacba;
   padding: 1em;
+}
+
+div#sidebar li:hover {
+  color: grey;
+}
+
+div#sidebar li:active {
+  color: white;
 }
 
 div#footer {
