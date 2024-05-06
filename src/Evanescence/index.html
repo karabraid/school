@@ -13,13 +13,15 @@
         <a href="OpenDoor/openDoor.html">The Open Door</a><br><br><br>
         <a href="Extras/index.html">Extras</a><br><br><br>
         <a href="Live2003/2003.html">Live 2003</a><br>
-        <audio id="audio" src="Extras/IfYouDontMind.mp3" onplay="vol()" autoplay loop></audio>
+        <audio id="audio" autoplay loop>
+            <source  src="Extras/BrokenHeart.mp3">
+        </audio>
     </body>
-
+    <!-- onplay="vol()" -->
     <script>
         function vol() {
             let aud = document.getElementById("audio");
-            aud.volume = 0.1;
+            aud.volume = 0.5;
         }
     </script>
 </html>
