@@ -315,3 +315,9 @@ th.topSide {
 th.side {
   border-right: 3px solid black;
 }
+
+@media only screen and (min-device-width: 800px) {
+  h3#media {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+}
